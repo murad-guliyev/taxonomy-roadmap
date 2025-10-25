@@ -1,0 +1,185 @@
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { PieChart, Layers, BarChart2 } from "lucide-react";
+
+export default function About() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className="relative h-[387px] bg-bg-colored overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary-500/5 to-transparent backdrop-blur-sm" />
+
+        <div className="relative z-10 max-w-[1170px] mx-auto px-[215px] pt-[289px]">
+          <h1 className="text-white font-raleway text-[32px] font-bold leading-[120%]">
+            About the initiative
+          </h1>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="py-[120px] px-[215px]">
+        <div className="max-w-[1170px] mx-auto flex flex-col gap-[50px]">
+          {/* Introduction */}
+          <div className="flex flex-col gap-8">
+            <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+              "Roadmap for Advancing Interoperability and Comparability of
+              Sustainable Finance Taxonomies" (Taxonomy Roadmap Initiative) was
+              launched by the Central Bank of Azerbaijan (CBAR), International
+              Finance Corporation (IFC), Sustainable Banking and Finance Network
+              (SBFN), the United Nations Development Programme (UNDP), and the
+              International Platform on Sustainable Finance (IPSF) during
+              Sustainable Finance Taxonomies event held in Baku, Azerbaijan
+              during COP29.
+            </p>
+            <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+              The initiative aims to facilitate cross-border investment flows
+              into sustainable activities, in line with Article 2.1(c) of the
+              Paris Agreement. The focus of this event is to showcase progress
+              on the Taxonomy Roadmap, driven by joint collaboration,
+              coordination and communication. Since the launch, the initiative
+              has expanded its partnership from the founding partners to 13
+              global and public partners. Notably, the Brazil Ministry of
+              Finance, representing the Presidency of COP30, joined the
+              initiative to further advance the implementation of the initiative
+              along the Road of Baku to Belém.
+            </p>
+          </div>
+
+          {/* Initiative Activities */}
+          <div className="flex flex-col gap-6">
+            <h2 className="text-brand-primary-900 font-raleway text-xl font-bold leading-[130%]">
+              Initiative Activities and Engagement
+            </h2>
+            <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+              The initiative partners have engaged in high-level discussions and
+              roundtables sharing the insights of sustainable finance taxonomies
+              and interoperability at major forums such as:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-text-default font-raleway text-base font-normal leading-[160%]">
+              <li>G20 Sustainable Finance Working Group meetings</li>
+              <li>BRICS+ Taxonomy Working Group meeting</li>
+              <li>IPSF SN@psa Meeting</li>
+              <li>Hamburg Sustainability Conference 2025</li>
+              <li>UN Financing for Development Conference (FfD4)</li>
+            </ul>
+            <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+              The initiative partners have been developing flagship tools and
+              deliverables to support the implementation of the Taxonomy Roadmap
+              and advance global sustainable finance taxonomy interoperability.
+            </p>
+          </div>
+
+          {/* Key Elements */}
+          <div className="flex flex-col gap-8 bg-gray-50 p-8 rounded-2xl">
+            <h2 className="text-brand-primary-900 font-raleway text-xl font-bold leading-[130%]">
+              Key elements of the Taxonomy Roadmap
+            </h2>
+
+            <div className="grid grid-cols-3 gap-10">
+              {/* Element 1 */}
+              <div className="flex flex-col items-center gap-10">
+                <div className="w-[100px] h-[100px] rounded-full border border-border-default flex items-center justify-center bg-white">
+                  <PieChart
+                    className="w-12 h-12 text-brand-primary-500"
+                    strokeWidth={2.5}
+                  />
+                </div>
+                <div className="flex flex-col gap-5">
+                  <h3 className="text-bg-colored font-raleway text-lg font-bold leading-[130%]">
+                    Identifying a common core set of taxonomy economic
+                    activities, particularly in EMDEs.
+                  </h3>
+                  <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+                    Focus on essential economic sectors and activities critical
+                    for Emerging Markets and Developing Economies to advance
+                    decarbonization efforts.
+                  </p>
+                </div>
+              </div>
+
+              {/* Element 2 */}
+              <div className="flex flex-col items-center gap-10">
+                <div className="w-[100px] h-[100px] rounded-full border border-border-default flex items-center justify-center bg-white">
+                  <Layers
+                    className="w-12 h-12 text-brand-primary-500"
+                    strokeWidth={2.5}
+                  />
+                </div>
+                <div className="flex flex-col gap-5">
+                  <h3 className="text-bg-colored font-raleway text-lg font-bold leading-[130%]">
+                    Creating standardized approaches
+                  </h3>
+                  <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+                    Developing common technical approaches for alignment with
+                    taxonomy principles and essential criteria, including Do No
+                    Significant Harm (DNSH), Minimum Social Safeguards (MSS) and
+                    ESG guidelines. Creating standardized approaches that
+                    promote interoperability while incorporating essential
+                    sustainability criteria and safeguards.
+                  </p>
+                </div>
+              </div>
+
+              {/* Element 3 */}
+              <div className="flex flex-col items-center gap-10">
+                <div className="w-[100px] h-[100px] rounded-full border border-border-default flex items-center justify-center bg-white">
+                  <BarChart2
+                    className="w-12 h-12 text-brand-primary-500"
+                    strokeWidth={2.5}
+                  />
+                </div>
+                <div className="flex flex-col gap-5">
+                  <h3 className="text-bg-colored font-raleway text-lg font-bold leading-[130%]">
+                    Formulating common approaches to finance the transition
+                    through taxonomies.
+                  </h3>
+                  <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+                    Developing frameworks to support transition finance
+                    activities that enable decarbonization across various
+                    economic sectors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Areas */}
+          <div className="flex flex-col gap-6">
+            <h2 className="text-brand-primary-900 font-raleway text-xl font-bold leading-[130%]">
+              Additional Areas for Greater Alignment
+            </h2>
+            <p className="text-text-default font-raleway text-base font-bold leading-[170%]">
+              Areas for even greater alignment that may also be explored
+            </p>
+
+            <div className="flex gap-11">
+              <div className="flex-1 flex flex-col gap-5 p-5 border border-border-default rounded-2xl bg-brand-primary-50/60">
+                <h3 className="text-bg-colored font-raleway text-lg font-bold leading-[130%]">
+                  Inclusivity in Alignment Approaches
+                </h3>
+                <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+                  Ensuring small and medium-sized enterprises (SMEs), women and
+                  vulnerable groups.
+                </p>
+              </div>
+
+              <div className="flex-1 flex flex-col gap-5 p-5 border border-border-default rounded-2xl bg-brand-primary-50/60">
+                <h3 className="text-bg-colored font-raleway text-lg font-bold leading-[130%]">
+                  Verification and Assurance Mechanism
+                </h3>
+                <p className="text-text-default font-raleway text-base font-normal leading-[160%]">
+                  Developing robust verification and assurance mechanisms for
+                  taxonomy alignment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}

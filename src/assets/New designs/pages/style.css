@@ -1,0 +1,1595 @@
+.focus-areas-and-tools,
+.focus-areas-and-tools * {
+  box-sizing: border-box;
+}
+.focus-areas-and-tools {
+  background: #e1e1e1;
+  height: 3091px;
+  position: relative;
+}
+.focus-areas-and-tools-common-core-activities {
+  background: #fafafa;
+  width: 1600px;
+  height: 2253px;
+  position: absolute;
+  left: 250px;
+  top: 249px;
+  overflow: hidden;
+}
+.ellipse-4 {
+  background: linear-gradient(
+    76.25deg,
+    rgba(61, 172, 92, 0.05) 0%,
+    rgba(79, 181, 136, 0.05) 100%
+  );
+  border-radius: 50%;
+  width: 845.8px;
+  height: 873.5px;
+  position: absolute;
+  right: -1068.17px;
+  bottom: 155.76px;
+  transform-origin: 0 0;
+  transform: rotate(120deg) scale(1, 1);
+  backdrop-filter: blur(2px);
+}
+.rectangle-4 {
+  background: var(--bg-colored, #2a5942);
+  width: 1600px;
+  height: 387px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.focus-areas-and-tools2 {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--heading-h2-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h2-font-size, 32px);
+  line-height: var(--heading-h2-line-height, 120%);
+  font-weight: var(--heading-h2-font-weight, 600);
+  position: absolute;
+  left: 215px;
+  top: 289px;
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-separator {
+  border-radius: 8px;
+  padding: var(--var-sds-size-padding-sm, 8px) 0px
+    var(--var-sds-size-padding-sm, 8px) 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 7px;
+  position: absolute;
+  left: 1115px;
+  top: 113px;
+}
+.rule {
+  background: var(--brand-primary-500, #3dac5c);
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1px;
+  position: relative;
+}
+.footer {
+  background: var(--bg-colored, #2a5942);
+  width: 1600px;
+  height: 754px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 0px;
+  overflow: hidden;
+}
+.frame-35 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1170px;
+  position: absolute;
+  left: 215px;
+  top: 120px;
+}
+.frame-34 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-33 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1170px;
+  position: relative;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 200px;
+  position: relative;
+}
+.about2 {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.frame-32 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.description-the-initiatives {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 200px;
+}
+.partners {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.fokus-areas-and-tools {
+  padding: 1px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 200px;
+  position: relative;
+}
+.focus-areas-and-tools3 {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.common-core-activities {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 200px;
+}
+.technical-approaches {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 200px;
+}
+.transition-finance {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 200px;
+}
+.additional-alignment-areas {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 200px;
+}
+.learning-and-resources {
+  padding: 1px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 240px;
+  position: relative;
+}
+.learning-and-resources2 {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  width: 240px;
+}
+.publications-resources {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 240px;
+}
+.pillar-2-technical-approaches {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 240px;
+}
+.other-learning-resources {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 240px;
+}
+.news-and-events {
+  padding: 1px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 200px;
+  position: relative;
+}
+.news-and-events2 {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.news {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 200px;
+}
+.events {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  width: 200px;
+}
+.line-1 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: var(--brand-primary-50, rgba(223, 239, 230, 0.38));
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button {
+  border-radius: var(--var-sds-size-radius-200, 8px);
+  padding: var(--var-sds-size-space-300, 12px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.button2 {
+  color: var(--bg-default, #ffffff);
+  text-align: left;
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: var(--var-sds-typography-body-size-medium, 16px);
+  line-height: 100%;
+  font-weight: var(--var-sds-typography-body-font-weight-regular, 400);
+  position: relative;
+}
+.arrow-up-right {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right3 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.line-2 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: var(--brand-primary-50, rgba(223, 239, 230, 0.38));
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+._2025-taxonomy-roadmap-initiative-advancing-sustainable-finance-taxonomy-interoperability {
+  color: var(--text-inverse, #ffffff);
+  text-align: left;
+  font-family: "Raleway-Light", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  position: relative;
+  align-self: stretch;
+}
+.ellipse-3 {
+  background: linear-gradient(
+    76.25deg,
+    rgba(61, 172, 92, 0.05) 0%,
+    rgba(79, 181, 136, 0.05) 100%
+  );
+  border-radius: 50%;
+  width: 845.8px;
+  height: 873.5px;
+  position: absolute;
+  left: 1892.37px;
+  top: -276.25px;
+  transform-origin: 0 0;
+  transform: rotate(120deg) scale(1, 1);
+  backdrop-filter: blur(2px);
+}
+.filter {
+  width: 1600px;
+  height: 66px;
+  position: absolute;
+  left: 0px;
+  top: 387px;
+}
+.rectangle-5 {
+  background: var(--bg-secondary, #ececec);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.frame-46 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 73.12%;
+  position: absolute;
+  right: 13.44%;
+  left: 13.44%;
+  top: 50%;
+  translate: 0 -50%;
+}
+.all {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+}
+.news2 {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+}
+.events2 {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+}
+.pillar-3-transition-finance-approaches {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: absolute;
+  left: 640px;
+  top: 0px;
+}
+.nav-menu {
+  background: var(--bg-default, #ffffff);
+  border-radius: 24px;
+  padding: 6px 20px 6px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 1254px;
+  height: 129px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 40px;
+  box-shadow: 0px 4px 60px 0px rgba(34, 34, 34, 0.1);
+  overflow: hidden;
+}
+.frame-36 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1170px;
+  position: relative;
+}
+.frame-21 {
+  flex-shrink: 0;
+  width: 458px;
+  height: 25px;
+  position: relative;
+}
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.home {
+  color: var(--text-default, #333333);
+  text-align: center;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  width: 93px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about3 {
+  color: var(--text-default, #333333);
+  text-align: center;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  width: 100px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-45 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.focus-areas-and-tools4 {
+  color: var(--text-default, #333333);
+  text-align: center;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-new-1 {
+  flex-shrink: 0;
+  width: 117px;
+  height: 117px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.frame-37 {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 513px;
+  position: relative;
+}
+.frame-39 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.learning-and-resources3 {
+  color: var(--text-default, #333333);
+  text-align: center;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chevron-down {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.news-and-events3 {
+  color: var(--text-default, #333333);
+  text-align: center;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact {
+  color: var(--text-default, #333333);
+  text-align: center;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-50 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1171px;
+  position: absolute;
+  left: 213px;
+  top: 513px;
+}
+.common-core-activities2 {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.identifying-a-common-core-set-of-taxonomy-economic-activities-particularly-in-emd-es {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-51 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1172px;
+  position: absolute;
+  left: 213px;
+  top: 642px;
+}
+.overview {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.identifying-essential-sectors-and-activities-for-emerging-markets-and-developing-economies-emd-es-with-a-shared-classification-system-this-element-aims-to-identify-a-core-set-of-economic-sectors-and-economic-activities-particularly-for-emd-es-which-are-critical-for-advancing-decarbonization-existing-comparison-exercises-such-as-the-ipsf-s-common-ground-taxonomy-will-inform-this-exercise-interoperability-for-these-core-sectors-and-activities-can-be-explored-through-use-of-a-shared-classification-system-such-as-the-international-standard-industrial-classification-isic-to-serve-as-a-reference-for-identifying-relevant-economic-activities-a-shared-approach-for-defining-categories-activities-metrics-and-technical-criteria-recommendations-for-possible-tiered-approaches-to-treat-common-activities-differently-based-on-market-maturity-and-national-pathways-while-maintaining-science-based-ambition-in-meeting-paris-agreement-goals {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.identifying-essential-sectors-and-activities-for-emerging-markets-and-developing-economies-emd-es-with-a-shared-classification-system-this-element-aims-to-identify-a-core-set-of-economic-sectors-and-economic-activities-particularly-for-emd-es-which-are-critical-for-advancing-decarbonization-existing-comparison-exercises-such-as-the-ipsf-s-common-ground-taxonomy-will-inform-this-exercise-interoperability-for-these-core-sectors-and-activities-can-be-explored-through-use-of-a-shared-classification-system-such-as-the-international-standard-industrial-classification-isic-to-serve-as-a-reference-for-identifying-relevant-economic-activities-a-shared-approach-for-defining-categories-activities-metrics-and-technical-criteria-recommendations-for-possible-tiered-approaches-to-treat-common-activities-differently-based-on-market-maturity-and-national-pathways-while-maintaining-science-based-ambition-in-meeting-paris-agreement-goals-span {
+}
+.identifying-essential-sectors-and-activities-for-emerging-markets-and-developing-economies-emd-es-with-a-shared-classification-system-this-element-aims-to-identify-a-core-set-of-economic-sectors-and-economic-activities-particularly-for-emd-es-which-are-critical-for-advancing-decarbonization-existing-comparison-exercises-such-as-the-ipsf-s-common-ground-taxonomy-will-inform-this-exercise-interoperability-for-these-core-sectors-and-activities-can-be-explored-through-use-of-a-shared-classification-system-such-as-the-international-standard-industrial-classification-isic-to-serve-as-a-reference-for-identifying-relevant-economic-activities-a-shared-approach-for-defining-categories-activities-metrics-and-technical-criteria-recommendations-for-possible-tiered-approaches-to-treat-common-activities-differently-based-on-market-maturity-and-national-pathways-while-maintaining-science-based-ambition-in-meeting-paris-agreement-goals-span2 {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+.key-elements-of-the-taxonomy-roadmap {
+  border-radius: 16px;
+  border-style: solid;
+  border-color: var(--border-default, #d9d9d9);
+  border-width: 1px;
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1170px;
+  position: absolute;
+  left: 215px;
+  top: 1025px;
+}
+.key-technical-approaches {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  width: 1037px;
+}
+.key-elements-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 235px;
+  position: relative;
+}
+.i {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 350px;
+  height: 351px;
+  position: relative;
+}
+.icon {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--border-default, #d9d9d9);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+.clipboard {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+._1-identifying-a-common-core-set-of-taxonomy-economic-activities-particularly-in-emd-es {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.shared-classification {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.using-international-standard-industrial-classification-isic-as-a-reference-framework {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.ii {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 350px;
+  position: relative;
+}
+.grid {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+._2-creating-standardized-approaches {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.common-criteria {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.developing-shared-approaches-for-defining-categories-activities-and-metrics {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.iii {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 350px;
+  height: 351px;
+  position: relative;
+}
+.sliders {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+._3-formulating-common-approaches-to-finance-the-transition-through-taxonomies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.tiered-approaches {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.recommendations-for-treating-activities-based-on-market-maturity-and-national-pathways {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.line-12 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: var(--brand-primary-500, #3dac5c);
+  border-width: 2px 0 0 0;
+  width: 228px;
+  height: 0px;
+  position: absolute;
+  left: 215px;
+  top: 453px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.focus-areas-and-tools-technical-approaches {
+  background: #fafafa;
+  width: 1600px;
+  height: 2593px;
+  position: absolute;
+  left: 1900px;
+  top: 249px;
+  overflow: hidden;
+}
+.arrow-up-right4 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right5 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right6 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.chevron-down2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.line-13 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: var(--brand-primary-500, #3dac5c);
+  border-width: 2px 0 0 0;
+  width: 209px;
+  height: 0px;
+  position: absolute;
+  left: 473px;
+  top: 453px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.technical-approaches2 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1170px;
+  position: absolute;
+  left: 215px;
+  top: 513px;
+}
+.frame-502 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.technical-approaches3 {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.creating-standardized-approaches-for-alignment-with-taxonomy-principles {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-512 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.developing-common-technical-approaches-for-alignment-with-taxonomy-principles-and-essential-criteria-including-do-no-significant-harm-dnsh-minimum-social-safeguards-mss-and-esg-guidelines-this-pillar-focuses-on-creating-standardized-methodologies-that-promote-interoperability-while-incorporating-essential-sustainability-criteria-and-safeguards-across-different-jurisdictions {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.key-components {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.key-components2 {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.frame-59 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-57 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-55 {
+  background: #f5f5f5;
+  border-radius: 16px;
+  flex-shrink: 0;
+  width: 535px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.matthew-smith-rfflri-94-rs-8-unsplash-1 {
+  width: 621px;
+  height: 414px;
+  position: absolute;
+  left: -51px;
+  top: -54px;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}
+.frame-56 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 577px;
+  position: relative;
+}
+.do-no-significant-harm-dnsh {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.environmental-safeguard-principles-impact-assessment-methodologies-threshold-setting-approaches-monitoring-and-verification-systems {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.line-22 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: var(--border-subtle-green, #cfded1);
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.frame-58 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 350px;
+  position: relative;
+}
+.minimum-social-safeguards-mss {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.social-impact-assessment-stakeholder-engagement-requirements-labor-rights-and-standards-community-consultation-processes {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.frame-552 {
+  background: #9f3737;
+  border-radius: 16px;
+  flex-shrink: 0;
+  width: 535px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.ian-van-landuyt-h-7-cz-zw-b-vn-7-k-unsplash-1 {
+  width: 535px;
+  height: 357px;
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  object-fit: cover;
+  aspect-ratio: 535/357;
+}
+.focus-areas-and-tools-transition-finance-approaches {
+  background: #fafafa;
+  width: 1600px;
+  height: 2071px;
+  position: absolute;
+  left: 3550px;
+  top: 249px;
+  overflow: hidden;
+}
+.arrow-up-right7 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right8 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right9 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.chevron-down3 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.line-14 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: var(--brand-primary-500, #3dac5c);
+  border-width: 2px 0 0 0;
+  width: 291px;
+  height: 0px;
+  position: absolute;
+  left: 712px;
+  top: 453px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.transition-finance-approaches {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.formulating-common-approaches-to-finance-the-transition-through-taxonomies {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.formulating-common-approaches-to-finance-the-transition-through-taxonomies-this-pillar-develops-frameworks-to-support-transition-finance-activities-that-enable-decarbonization-across-various-economic-sectors-transition-finance-is-critical-for-supporting-activities-that-may-not-yet-be-fully-sustainable-but-are-on-a-credible-pathway-toward-achieving-sustainability-goals {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.key-elements-of-the-taxonomy-roadmap2 {
+  border-radius: 16px;
+  border-style: solid;
+  border-color: var(--border-default, #d9d9d9);
+  border-width: 1px;
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1170px;
+  position: relative;
+}
+.transition-finance-framework {
+  color: var(--brand-primary-900, #1b3629);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  width: 1037px;
+}
+.frame-13 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 235px;
+  position: relative;
+}
+.i2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 350px;
+  height: 235px;
+  position: relative;
+}
+.clock {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.pathway-definition {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.clear-criteria-for-credible-transition-pathways-aligned-with-climate-goals {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.clock2 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.timeline-requirements {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.time-bound-commitments-and-milestones-for-achieving-transition-goals {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.sliders2 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.monitoring-reporting {
+  color: var(--bg-colored, #2a5942);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.regular-progress-tracking-and-transparent-reporting-mechanisms {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.focus-areas-and-tools-additional-areas-for-greater-alignment {
+  background: #fafafa;
+  width: 1600px;
+  height: 1784px;
+  position: absolute;
+  left: 5200px;
+  top: 249px;
+  overflow: hidden;
+}
+.arrow-up-right10 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right11 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.arrow-up-right12 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.chevron-down4 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.line-15 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: var(--brand-primary-500, #3dac5c);
+  border-width: 2px 0 0 0;
+  width: 365px;
+  height: 0px;
+  position: absolute;
+  left: 1033px;
+  top: 453px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.additional-areas-for-greater-alignment {
+  display: flex;
+  flex-direction: row;
+  gap: 53px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 215px;
+  top: 513px;
+}
+.frame-60 {
+  background: #d9d9d9;
+  border-radius: 16px;
+  flex-shrink: 0;
+  width: 535px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.kazuend-19-sc-2-oa-vzw-0-unsplash-1 {
+  width: 535px;
+  height: 357px;
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  object-fit: cover;
+  aspect-ratio: 535/357;
+}
+.technical-approaches4 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.additional-areas-for-greater-alignment2 {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--heading-h3-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h3-font-size, 20px);
+  line-height: var(--heading-h3-line-height, 130%);
+  font-weight: var(--heading-h3-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.areas-for-even-greater-alignment-that-may-also-be-explored {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inclusivity-in-alignment-approaches {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.inclusivity-in-alignment-approaches2 {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.ensuring-small-and-medium-sized-enterprises-sm-es-women-and-vulnerable-groups {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.verification-and-assurance-mechanism {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--heading-h4-font-family, "Raleway-SemiBold", sans-serif);
+  font-size: var(--heading-h4-font-size, 18px);
+  line-height: var(--heading-h4-line-height, 130%);
+  font-weight: var(--heading-h4-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.developing-robust-verification-and-assurance-mechanisms-for-taxonomy-alignment {
+  color: var(--text-default, #333333);
+  text-align: left;
+  font-family: var(--body-default-font-family, "Raleway-Regular", sans-serif);
+  font-size: var(--body-default-font-size, 16px);
+  line-height: var(--body-default-line-height, 160%);
+  font-weight: var(--body-default-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}

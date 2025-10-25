@@ -1,0 +1,188 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: Raleway, Montserrat, system-ui, -apple-system, sans-serif;
+  --font-serif: "EB Garamond", "Libre Baskerville", Georgia, serif;
+  --font-heading: Raleway, Montserrat, system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #ffffff; /* Backgrounds: #ffffff */
+  --foreground: #19241d; /* Text: #19241d */
+  --card: #ffffff; /* Backgrounds: #ffffff */
+  --card-foreground: #19241d; /* Text: #19241d */
+  --popover: #ffffff; /* Backgrounds: #ffffff */
+  --popover-foreground: #19241d; /* Text: #19241d */
+  --primary: #01a04e; /* Primary Actions & CTAs: #01a04e */
+  --primary-foreground: #ffffff;
+  --secondary: #23c966; /* Primary Actions & CTAs: #23c966 */
+  --secondary-foreground: #ffffff;
+  --muted: #f2f2f2; /* Backgrounds: #f2f2f2 */
+  --muted-foreground: #212529; /* Text: #212529 */
+  --accent: #dfefe6; /* Backgrounds: #dfefe6 */
+  --accent-foreground: #000000; /* Text: #000000 */
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #dbdbdb; /* Borders & Dividers: #dbdbdb */
+  --input: #e6e6e6; /* Borders & Dividers: #e6e6e6 */
+  --ring: #47504a; /* Subtle Elements: #47504a */
+  --chart-1: #01a04e;
+  --chart-2: #23c966;
+  --chart-3: #47504a;
+  --chart-4: #dfefe6;
+  --chart-5: #f2f2f2;
+  --sidebar: #ffffff; /* Backgrounds: #ffffff */
+  --sidebar-foreground: #19241d; /* Text: #19241d */
+  --sidebar-primary: #01a04e; /* Primary Actions & CTAs: #01a04e */
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #efefef; /* Subtle Elements: #efefef */
+  --sidebar-accent-foreground: #19241d; /* Text: #19241d */
+  --sidebar-border: #dbdbdb; /* Borders & Dividers: #dbdbdb */
+  --sidebar-ring: #47504a; /* Subtle Elements: #47504a */
+  
+  /* Figma Design System Variables */
+  --text-inverse: #ffffff;
+  --heading-h2-font-family: 'Raleway-SemiBold', sans-serif;
+  --heading-h2-font-size: 32px;
+  --heading-h2-line-height: 120%;
+  --heading-h2-font-weight: 600;
+}
+
+.dark {
+  --background: #19241d; /* Dark version of text color */
+  --foreground: #ffffff; /* White text on dark */
+  --card: #212529; /* Darker card background */
+  --card-foreground: #ffffff; /* White text on dark cards */
+  --popover: #212529; /* Dark popover background */
+  --popover-foreground: #ffffff; /* White text on dark popovers */
+  --primary: #23c966; /* Brighter green for dark mode */
+  --primary-foreground: #19241d; /* Dark text on primary */
+  --secondary: #01a04e; /* Darker green for secondary in dark mode */
+  --secondary-foreground: #ffffff; /* White text on secondary */
+  --muted: #47504a; /* Subtle element color for muted backgrounds */
+  --muted-foreground: #efefef; /* Light subtle text */
+  --accent: #47504a; /* Subtle element color for accents */
+  --accent-foreground: #ffffff; /* White text on accent */
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: #47504a; /* Subtle element color for borders */
+  --input: #47504a; /* Subtle element color for inputs */
+  --ring: #23c966; /* Primary green for focus rings */
+  --chart-1: #23c966;
+  --chart-2: #01a04e;
+  --chart-3: #efefef;
+  --chart-4: #47504a;
+  --chart-5: #dbdbdb;
+  --sidebar: #212529; /* Dark sidebar background */
+  --sidebar-foreground: #ffffff; /* White sidebar text */
+  --sidebar-primary: #23c966; /* Primary green for sidebar */
+  --sidebar-primary-foreground: #19241d; /* Dark text on primary */
+  --sidebar-accent: #47504a; /* Subtle accent in sidebar */
+  --sidebar-accent-foreground: #ffffff; /* White text on accent */
+  --sidebar-border: #47504a; /* Subtle border in sidebar */
+  --sidebar-ring: #23c966; /* Primary green for focus */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    word-wrap: break-word;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: Raleway, Montserrat, system-ui, -apple-system, sans-serif;
+    word-wrap: break-word;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+    letter-spacing: 0.025em;
+  }
+  h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+  h2 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+  }
+  h3 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl;
+  }
+  .subtitle, .description {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  /* Cursor pointer for all interactive elements */
+  button,
+  a,
+  [role="button"],
+  .clickable {
+    @apply cursor-pointer;
+  }
+
+  /* Font Classes */
+  .font-raleway {
+    font-family: "Raleway";
+  }
+
+  /* Responsive utilities */
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  .hero-height {
+    @apply h-[300px] sm:h-[400px] lg:h-[500px];
+  }
+
+  .responsive-text {
+    @apply text-sm sm:text-base;
+  }
+
+  .responsive-heading {
+    @apply text-lg sm:text-xl lg:text-2xl;
+  }
+}
