@@ -321,31 +321,31 @@ const Principles = () => {
   return (
     <div className="w-full bg-[#fafafa]">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full overflow-hidden bg-[#2a5942] pt-64">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[400px] w-full overflow-hidden bg-[#2a5942] pt-32 sm:pt-40 md:pt-48 lg:pt-64">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pb-20">
-          <h1 className="text-[32px] font-semibold text-white leading-[120%] mb-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pb-12 sm:pb-16 lg:pb-20">
+          <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%] mb-4">
             Principles for Taxonomy Interoperability
           </h1>
-          <p className="text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
+          <p className="text-[14px] sm:text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
             Ten foundational principles for sustainable finance taxonomy developers and policymakers to enhance global interoperability and comparability
           </p>
         </div>
       </section>
 
       {/* Introduction */}
-      <section className="py-20">
-        <div className="max-w-[1170px] mx-auto px-4">
-          <div className="space-y-6">
-            <p className="text-[16px] text-[#333] leading-[153%]">
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
+          <div className="space-y-4 sm:space-y-6">
+            <p className="text-[14px] sm:text-[16px] text-[#333] leading-[153%]">
               Sustainable finance taxonomies have emerged from across a range of economic contexts in developed and emerging markets.
               While a local taxonomy is an essential building block for market growth, for taxonomies to enable the flow of cross-border
               capital requires "interoperability"—the ability to compare taxonomies based on common principles and/or a scientific baseline.
             </p>
-            <p className="text-[16px] text-[#333] leading-[153%]">
+            <p className="text-[14px] sm:text-[16px] text-[#333] leading-[153%]">
               Interoperability will require global collaboration with input from emerging and developed market contexts. It is a collective
               pursuit of a global objective in line with the COP30 presidency's call for collaboration as well as leadership from the Global South.
             </p>
@@ -359,9 +359,9 @@ const Principles = () => {
 
 
       {/* Principles Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-[1170px] mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {principles.map((principle) => (
               <div
                 key={principle.id}
@@ -371,13 +371,13 @@ const Principles = () => {
                 {/* Top colored header */}
                 <div className={`h-2 ${getCategoryColor(principle.category)}`}></div>
 
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   {/* Number and category */}
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-semibold text-[#01A04E] uppercase tracking-wide">
                       {principle.category}
                     </span>
-                    <div className="text-5xl font-bold text-[#01A04E] opacity-20">
+                    <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#01A04E] opacity-20">
                       {principle.number}
                     </div>
                   </div>

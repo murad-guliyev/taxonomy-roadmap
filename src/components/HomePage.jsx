@@ -100,7 +100,7 @@ const HomePage = () => {
       </section>
 
       {/* Key Elements Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-8 lg:px-[215px]">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
         <div className="max-w-[1170px] mx-auto">
           <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-8 lg:mb-10 text-center">
             Key elements of the Taxonomy Roadmap
@@ -156,7 +156,7 @@ const HomePage = () => {
       </section>
 
       {/* Historic Launch Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-8 lg:px-[215px] bg-[#2a5942] relative overflow-hidden">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px] bg-[#2a5942] relative overflow-hidden">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
@@ -194,19 +194,19 @@ const HomePage = () => {
       </section>
 
       {/* Publications Section */}
-      <section className="py-[120px] px-[215px]">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
         <div className="max-w-[1170px] mx-auto">
-          <div className="flex items-center justify-between mb-10">
-            <h2 className="text-[32px] font-semibold text-[#1b3629] leading-[120%]">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
+            <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-[#1b3629] leading-[120%]">
               Roadmap Publications
             </h2>
-            <Link to="/publications" className="flex items-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-              <span className="text-[#303030]">See all</span>
+            <Link to="/publications" className="flex items-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
+              <span className="text-[#303030] text-sm sm:text-base">See all</span>
               <img src={arrowRightIcon} alt="" className="w-4 h-4" />
             </Link>
           </div>
 
-          <p className="text-[#333] leading-[153%] mb-8">
+          <p className="text-[14px] sm:text-[16px] text-[#333] leading-[153%] mb-6 sm:mb-8">
             Access comprehensive documentation, reports, and guidelines for sustainable finance taxonomy implementation
           </p>
 
@@ -273,22 +273,22 @@ const HomePage = () => {
       </section>
 
       {/* News and Events Section */}
-      <section className="py-[120px] px-[215px]">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
         <div className="max-w-[1170px] mx-auto">
-          <div className="flex items-center justify-between mb-10">
-            <h2 className="text-[32px] font-semibold text-[#1b3629] leading-[120%]">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
+            <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-[#1b3629] leading-[120%]">
               News and events
             </h2>
-            <Link to="/news" className="flex items-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-              <span className="text-[#303030]">See all</span>
+            <Link to="/news" className="flex items-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
+              <span className="text-[#303030] text-sm sm:text-base">See all</span>
               <img src={arrowRightIcon} alt="" className="w-4 h-4" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {/* News Item 1 */}
             <div className="flex flex-col gap-4">
-              <div className="relative h-[350px] bg-white overflow-hidden">
+              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg">
                 <img src={g20Logo1} alt="" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-[#dfefe6] rounded-2xl px-3 py-1">
                   <span className="text-xs font-bold text-black">Articles</span>
@@ -306,7 +306,7 @@ const HomePage = () => {
 
             {/* News Item 2 */}
             <div className="flex flex-col gap-4">
-              <div className="relative h-[350px] bg-white overflow-hidden">
+              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg">
                 <img src={genevaPhoto} alt="" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-[#dfefe6] rounded-2xl px-3 py-1">
                   <span className="text-xs font-bold text-black">Event</span>
@@ -324,7 +324,7 @@ const HomePage = () => {
 
             {/* News Item 3 */}
             <div className="flex flex-col gap-4">
-              <div className="relative h-[350px] bg-white overflow-hidden">
+              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg">
                 <img src={g20Logo2} alt="" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-[#dfefe6] rounded-2xl px-3 py-1">
                   <span className="text-xs font-bold text-black">Articles</span>
@@ -344,24 +344,24 @@ const HomePage = () => {
       </section>
 
       {/* COP30 Event Section */}
-      <section className="py-[120px] px-[215px] bg-[#2a5942] relative overflow-hidden">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px] bg-[#2a5942] relative overflow-hidden">
         {/* Decorative Circles */}
         <div className="absolute -top-24 right-[490px] w-[739px] h-[739px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[342px] left-[690px] w-[739px] h-[739px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm rotate-[120deg]" />
 
         <div className="relative z-10 max-w-[1170px] mx-auto">
-          <h2 className="text-[32px] font-semibold text-white leading-[120%] mb-10">
+          <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%] mb-8 lg:mb-10">
             UN Climate Change Conference - COP30 Event
           </h2>
 
-          <div className="flex flex-col lg:flex-row items-center gap-11">
-            <div className="w-[424px] h-[367px] bg-white rounded-[20px] flex items-center justify-center flex-shrink-0">
-              <img src={cop30Logo} alt="COP30 Logo" className="w-[303px] h-[303px] object-contain" />
+          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-11">
+            <div className="w-full max-w-[424px] h-[250px] sm:h-[300px] lg:h-[367px] bg-white rounded-[20px] flex items-center justify-center flex-shrink-0">
+              <img src={cop30Logo} alt="COP30 Logo" className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[303px] lg:h-[303px] object-contain" />
             </div>
 
-            <div className="flex-1 space-y-5 text-white">
-              <h3 className="text-xl font-semibold leading-[130%]">About the event</h3>
-              <div className="space-y-4 leading-[160%]">
+            <div className="flex-1 space-y-4 lg:space-y-5 text-white">
+              <h3 className="text-lg sm:text-xl font-semibold leading-[130%]">About the event</h3>
+              <div className="space-y-3 sm:space-y-4 text-[14px] sm:text-[16px] leading-[160%]">
                 <p>
                   This event builds on the momentum of the Sustainable Finance Taxonomies event held in Baku, Azerbaijan during COP29, where the "Roadmap for Advancing Interoperability and Comparability of Sustainable Finance Taxonomies" (Taxonomy Roadmap Initiative) was launched by the Central Bank of Azerbaijan (CBAR), International Finance Corporation (IFC), Sustainable Banking and Finance Network (SBFN), the United Nations Development Programme (UNDP), and the International Platform on Sustainable Finance (IPSF).
                 </p>
@@ -382,13 +382,13 @@ const HomePage = () => {
       </section>
 
       {/* Partners Section - Carousel */}
-      <section className="py-[120px] px-[215px]">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
         <div className="max-w-[1520px] mx-auto">
-          <h2 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-10">
+          <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-8 lg:mb-10">
             Partners
           </h2>
 
-          <p className="text-[#333] leading-[160%] mb-8">
+          <p className="text-[14px] sm:text-[16px] text-[#333] leading-[160%] mb-6 sm:mb-8">
             Leading global institutions and initiatives working together to advance interoperability and comparability of sustainable finance taxonomies
           </p>
 
@@ -405,9 +405,9 @@ const HomePage = () => {
           >
             <CarouselContent className="ml-0">
               {partners.map((partner) => (
-                <CarouselItem key={partner.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
-                  <div className="bg-white border border-[#d9d9d9] rounded-lg p-6 flex flex-col gap-6 h-full">
-                    <div className="h-[160px] w-full bg-white flex items-center justify-center">
+                <CarouselItem key={partner.id} className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div className="bg-white border border-[#d9d9d9] rounded-lg p-4 sm:p-6 flex flex-col gap-4 sm:gap-6 h-full">
+                    <div className="h-[120px] sm:h-[160px] w-full bg-white flex items-center justify-center">
                       <img
                         src={partner.logo}
                         alt={partner.alt}
@@ -416,10 +416,10 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col gap-4 flex-1">
                       <div className="space-y-2">
-                        <h3 className="text-lg font-semibold text-[#2a5942] leading-[130%]">
+                        <h3 className="text-base sm:text-lg font-semibold text-[#2a5942] leading-[130%]">
                           {partner.name}
                         </h3>
-                        <p className="text-[#757575] leading-[153%] text-sm">
+                        <p className="text-[#757575] leading-[153%] text-xs sm:text-sm">
                           {partner.description}
                         </p>
                       </div>

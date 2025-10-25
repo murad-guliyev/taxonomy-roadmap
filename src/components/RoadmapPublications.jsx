@@ -76,23 +76,23 @@ const RoadmapPublications = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[387px] w-full overflow-hidden bg-[#2a5942]">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
         {/* Decorative Circles */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pt-[289px]">
-          <h1 className="text-white text-[32px] font-semibold leading-[120%]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-[289px]">
+          <h1 className="text-white text-[24px] sm:text-[28px] lg:text-[32px] font-semibold leading-[120%]">
             Learning and Resources
           </h1>
         </div>
       </section>
 
       {/* Navigation Tabs */}
-      <section className="bg-[#ECECEC] px-4">
-        <div className="max-w-[1170px] mx-auto flex items-center gap-8 py-5 overflow-x-auto">
+      <section className="bg-[#ECECEC] px-4 sm:px-6">
+        <div className="max-w-[1170px] mx-auto flex items-center gap-4 sm:gap-6 lg:gap-8 py-4 sm:py-5 overflow-x-auto">
           <button
             onClick={() => setActiveTab('publications')}
-            className={`whitespace-nowrap text-xl font-semibold leading-[130%] pb-2 border-b-2 transition-colors ${
+            className={`whitespace-nowrap text-lg sm:text-xl font-semibold leading-[130%] pb-2 border-b-2 transition-colors ${
               activeTab === 'publications'
                 ? 'text-[#1b3629] border-[#3dac5c]'
                 : 'text-[#1b3629] border-transparent hover:border-[#3dac5c]/50'
@@ -102,7 +102,7 @@ const RoadmapPublications = () => {
           </button>
           <button
             onClick={() => setActiveTab('principles')}
-            className={`whitespace-nowrap text-xl font-semibold leading-[130%] pb-2 border-b-2 transition-colors ${
+            className={`whitespace-nowrap text-lg sm:text-xl font-semibold leading-[130%] pb-2 border-b-2 transition-colors ${
               activeTab === 'principles'
                 ? 'text-[#1b3629] border-[#3dac5c]'
                 : 'text-[#1b3629] border-transparent hover:border-[#3dac5c]/50'
@@ -116,20 +116,20 @@ const RoadmapPublications = () => {
       {/* Content based on active tab */}
       {activeTab === 'publications' && (
         /* Publications Grid */
-        <div className="py-20 px-[215px]">
+        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
           <div className="max-w-[1170px] mx-auto">
             {/* Section Heading and Description */}
-            <div className="mb-12">
-              <h2 className="text-xl font-semibold text-gray-900 font-['Raleway'] mb-4">
+            <div className="mb-8 sm:mb-10 lg:mb-12">
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-900 font-['Raleway'] mb-4">
                 Roadmap Publications
               </h2>
-              <p className="text-base font-normal text-gray-900 font-['Raleway']">
+              <p className="text-[14px] sm:text-base font-normal text-gray-900 font-['Raleway']">
                 Access comprehensive documentation, reports, and guidelines for sustainable finance taxonomy implementation
               </p>
             </div>
 
             {/* Publications Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-11">
               {visiblePublications.map((publication, index) => (
                 <div key={`${publication.id}-${index}`} className="bg-white rounded-lg border border-gray-300 p-6 flex flex-col justify-between min-h-[400px]">
                   <div className="flex-1">
@@ -186,14 +186,14 @@ const RoadmapPublications = () => {
 
       {activeTab === 'principles' && (
         /* Principles Content */
-        <div className="py-20 px-[215px]">
+        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
           <div className="max-w-[1170px] mx-auto">
             {/* Main Title and Introduction */}
-            <div className="mb-16">
-              <h2 className="text-[32px] font-semibold text-gray-900 font-['Raleway'] mb-8">
+            <div className="mb-12 sm:mb-14 lg:mb-16">
+              <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-gray-900 font-['Raleway'] mb-6 sm:mb-8">
                 Principles for Taxonomy Interoperability
               </h2>
-              <div className="space-y-6 text-[16px] text-gray-700 font-['Raleway'] leading-relaxed">
+              <div className="space-y-4 sm:space-y-6 text-[14px] sm:text-[16px] text-gray-700 font-['Raleway'] leading-relaxed">
                 <p>
                   These foundational principles are designed to guide sustainable finance taxonomy developers and policymakers 
                   in creating interoperable frameworks that can work together effectively across different jurisdictions and markets.

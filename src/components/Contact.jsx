@@ -66,31 +66,31 @@ ${formData.message}
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="relative h-[387px] bg-[#2a5942] overflow-hidden">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] bg-[#2a5942] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pt-[289px]">
-          <h1 className="text-white text-[28px] font-normal leading-[120%]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-[289px]">
+          <h1 className="text-white text-[24px] sm:text-[26px] lg:text-[28px] font-normal leading-[120%]">
             Contact us
           </h1>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-[120px] px-[215px] relative">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px] relative">
         {/* Decorative blur */}
         <div className="absolute bottom-0 right-0 w-[846px] h-[873px] rounded-full bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm opacity-30" />
 
-        <div className="max-w-[822px] ml-0 relative z-10">
+        <div className="max-w-[822px] mx-auto lg:ml-0 relative z-10">
           <form
             onSubmit={handleSubmit}
-            className="bg-white border border-[#d9d9d9] rounded-lg p-6 flex flex-col gap-6"
+            className="bg-white border border-[#d9d9d9] rounded-lg p-4 sm:p-6 flex flex-col gap-4 sm:gap-6"
           >
             {/* Name */}
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="name"
-                className="text-[#333] text-base leading-[160%]"
+                className="text-[#333] text-[14px] sm:text-[14px] sm:text-base leading-[160%]"
               >
                 Name
               </label>
@@ -102,7 +102,7 @@ ${formData.message}
                 onChange={handleChange}
                 required
                 placeholder="Enter name here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -110,7 +110,7 @@ ${formData.message}
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="surname"
-                className="text-[#333] text-base leading-[160%]"
+                className="text-[#333] text-[14px] sm:text-[14px] sm:text-base leading-[160%]"
               >
                 Surname
               </label>
@@ -122,7 +122,7 @@ ${formData.message}
                 onChange={handleChange}
                 required
                 placeholder="Enter surname here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -130,7 +130,7 @@ ${formData.message}
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="email"
-                className="text-[#333] text-base leading-[160%]"
+                className="text-[#333] text-[14px] sm:text-[14px] sm:text-base leading-[160%]"
               >
                 Email
               </label>
@@ -142,7 +142,7 @@ ${formData.message}
                 onChange={handleChange}
                 required
                 placeholder="Enter email here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -150,7 +150,7 @@ ${formData.message}
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="organization"
-                className="text-[#333] text-base leading-[160%]"
+                className="text-[#333] text-[14px] sm:text-[14px] sm:text-base leading-[160%]"
               >
                 Organization
               </label>
@@ -161,7 +161,7 @@ ${formData.message}
                 value={formData.organization}
                 onChange={handleChange}
                 placeholder="Enter organization here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -169,7 +169,7 @@ ${formData.message}
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="category"
-                className="text-[#333] text-base leading-[160%]"
+                className="text-[#333] text-[14px] sm:text-[14px] sm:text-base leading-[160%]"
               >
                 Feedback Category
               </label>
@@ -178,7 +178,7 @@ ${formData.message}
                 name="category"
                 value={formData.category}
                 onChange={handleChange}
-                className="min-h-[40px] px-4 py-2 border border-[#d9d9d9] rounded-lg bg-white text-[#333] text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="min-h-[40px] px-4 py-2 border border-[#d9d9d9] rounded-lg bg-white text-[#333] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               >
                 <option value="">Select feedback category</option>
                 <option value="general">General Inquiry</option>
@@ -193,7 +193,7 @@ ${formData.message}
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="message"
-                className="text-[#333] text-base leading-[160%]"
+                className="text-[#333] text-[14px] sm:text-[14px] sm:text-base leading-[160%]"
               >
                 Share your feedback
               </label>
@@ -205,7 +205,7 @@ ${formData.message}
                 required
                 rows={4}
                 placeholder="Enter message here"
-                className="min-h-[80px] px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c] resize-y"
+                className="min-h-[80px] px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-[#333] placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c] resize-y"
               />
             </div>
 
@@ -225,7 +225,7 @@ ${formData.message}
             <button
               type="submit"
               disabled={isSubmitting}
-              className="h-10 px-2 py-2 bg-[#3dac5c] text-white text-base font-semibold rounded-lg hover:bg-[#3dac5c]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="h-10 px-2 py-2 bg-[#3dac5c] text-white text-[14px] sm:text-base font-semibold rounded-lg hover:bg-[#3dac5c]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Submit'}
             </button>

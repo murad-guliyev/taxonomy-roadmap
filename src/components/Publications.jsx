@@ -13,7 +13,7 @@ const CardForLearning = ({ publication, onDownload, className, style, ...props }
         borderWidth: "1px",
         padding: "var(--var-sds-size-space-600, 24px)",
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         gap: "var(--var-sds-size-space-600, 24px)",
         rowGap: "24px",
         alignItems: "flex-start",
@@ -21,11 +21,12 @@ const CardForLearning = ({ publication, onDownload, className, style, ...props }
         flexWrap: "wrap",
         alignContent: "flex-start",
         flexShrink: "0",
-        height: "419px",
-        minWidth: "240px",
+        minHeight: "300px",
+        width: "100%",
         position: "relative",
         ...style,
       }}
+      className={`${className || ''}`}
     >
       <div
         style={{
@@ -400,13 +401,13 @@ const Publications = () => {
       )}
 
       {/* Hero Section */}
-      <section className="relative h-[387px] w-full overflow-hidden bg-[#2a5942]">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pt-[289px]">
-          <h1 className="text-[32px] font-semibold text-white leading-[120%]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-[289px]">
+          <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%]">
             Learning and Resources
           </h1>
         </div>
@@ -414,11 +415,11 @@ const Publications = () => {
 
       {/* Tab Bar */}
       <section className="bg-white border-b border-[#d9d9d9]">
-        <div className="max-w-[1170px] mx-auto px-[215px]">
-          <div className="flex gap-12">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
+          <div className="flex gap-4 sm:gap-8 lg:gap-12 overflow-x-auto">
             <button
               onClick={() => setActiveTab('publications')}
-              className={`py-4 font-semibold text-base relative transition-colors ${
+              className={`py-4 font-semibold text-sm sm:text-base relative transition-colors whitespace-nowrap ${
                 activeTab === 'publications'
                   ? 'text-[#1b3629] border-b-2 border-[#3dac5c] -mb-[2px]'
                   : 'text-[#999] hover:text-[#1b3629]'
@@ -428,7 +429,7 @@ const Publications = () => {
             </button>
             <button
               onClick={() => setActiveTab('principles')}
-              className={`py-4 font-semibold text-base relative transition-colors ${
+              className={`py-4 font-semibold text-sm sm:text-base relative transition-colors whitespace-nowrap ${
                 activeTab === 'principles'
                   ? 'text-[#1b3629] border-b-2 border-[#3dac5c] -mb-[2px]'
                   : 'text-[#999] hover:text-[#1b3629]'
@@ -441,20 +442,20 @@ const Publications = () => {
       </section>
 
       {/* Publications Content */}
-      <section className="py-20">
-        <div className="max-w-[1170px] mx-auto px-[215px]">
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
           {/* Section Header */}
-          <div className="mb-12">
-            <h2 className="font-raleway text-[20px] font-semibold text-[#1b3629] leading-[130%] mb-4">
+          <div className="mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="font-raleway text-[18px] sm:text-[20px] font-semibold text-[#1b3629] leading-[130%] mb-4">
               Roadmap Publications
             </h2>
-            <p className="font-raleway text-[16px] font-normal text-text-default leading-[160%]">
+            <p className="font-raleway text-[14px] sm:text-[16px] font-normal text-text-default leading-[160%]">
               Access comprehensive documentation, reports, and guidelines for sustainable finance taxonomy implementation
             </p>
           </div>
 
           {/* Publications Grid */}
-          <div className="grid lg:grid-cols-3 gap-[45px] mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[45px] mb-8 sm:mb-10 lg:mb-12">
             {publications.map((publication) => (
               <CardForLearning 
                 key={publication.id} 

@@ -73,16 +73,16 @@ const OtherResources = () => {
   return (
     <div className="w-full bg-[#fafafa]">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full overflow-hidden bg-[#2a5942] pt-64">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[400px] w-full overflow-hidden bg-[#2a5942] pt-32 sm:pt-40 md:pt-48 lg:pt-64">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pb-20">
-          <h1 className="text-[32px] font-semibold text-white leading-[120%] mb-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pb-12 sm:pb-16 lg:pb-20">
+          <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%] mb-4">
             Other Learning Resources
           </h1>
-          <p className="text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
+          <p className="text-[14px] sm:text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
             Explore additional resources, tools, and educational materials to deepen your
             understanding of sustainable finance taxonomies and interoperability
           </p>
@@ -90,25 +90,25 @@ const OtherResources = () => {
       </section>
 
       {/* Resources Grid */}
-      <section className="py-20">
-        <div className="max-w-[1170px] mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-14 lg:mb-16">
             {resources.map((resource) => (
               <div
                 key={resource.id}
                 className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
               >
-                <div className="p-8">
+                <div className="p-4 sm:p-6 lg:p-8">
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-[#2a5942] leading-[130%] mb-2 line-clamp-2">
+                    <h3 className="text-base sm:text-lg font-semibold text-[#2a5942] leading-[130%] mb-2 line-clamp-2">
                       {resource.title}
                     </h3>
-                    <p className="text-sm font-medium text-[#3dac5c]">
+                    <p className="text-xs sm:text-sm font-medium text-[#3dac5c]">
                       {resource.provider}
                     </p>
                   </div>
 
-                  <p className="text-[#333] leading-[153%] mb-6 line-clamp-3">
+                  <p className="text-[#333] text-[14px] sm:text-base leading-[153%] mb-4 sm:mb-6 line-clamp-3">
                     {resource.description}
                   </p>
 
