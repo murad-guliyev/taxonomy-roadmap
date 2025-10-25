@@ -103,8 +103,8 @@ const FocusAreasAndTools = () => {
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px] pt-32 sm:pt-40 md:pt-48 lg:pt-[289px] pb-12 sm:pb-16 lg:pb-20">
-          <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%] font-['Raleway']">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64 pb-12 sm:pb-16 lg:pb-20">
+          <h1 className="text-white font-semibold leading-[120%] font-['Raleway']">
             Focus Areas and Tools
           </h1>
         </div>
@@ -112,7 +112,7 @@ const FocusAreasAndTools = () => {
 
       {/* Filter Tabs */}
       <div className="bg-white border-b border-gray-200">
-        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px] py-4 sm:py-6">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 py-4 sm:py-6">
           <div className="flex space-x-4 sm:space-x-6 lg:space-x-8 overflow-x-auto">
             <button
               onClick={() => setActiveFilter('common-core')}
@@ -160,10 +160,10 @@ const FocusAreasAndTools = () => {
 
       {/* Content Section */}
       <div className="bg-[#fafafa] min-h-screen">
-        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px] py-12 sm:py-16 lg:py-20">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
           {/* Title and Subtitle */}
           <div className="mb-8">
-            <h2 className="text-[32px] font-semibold text-gray-900 leading-[120%] font-['Raleway'] mb-4">
+            <h2 className="font-semibold text-gray-900 leading-[120%] font-['Raleway'] mb-4">
               {currentArea.title}
             </h2>
             <p className="text-[18px] text-gray-700 leading-[130%] font-['Raleway']">

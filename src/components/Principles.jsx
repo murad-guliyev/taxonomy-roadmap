@@ -275,14 +275,14 @@ const Principles = () => {
                   <span className="px-3 py-1 rounded-full text-sm font-medium text-white bg-[#3dac5c]">
                     {principle.category}
                   </span>
-                  <h1 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mt-2">{principle.title}</h1>
+                  <h1 className="font-semibold text-foreground leading-[120%] mt-2">{principle.title}</h1>
                 </div>
               </div>
 
               <div className="space-y-8">
                 <div>
                   <h2 className="text-lg font-semibold text-[#2a5942] leading-[130%] mb-4">Overview</h2>
-                  <p className="text-[16px] text-[#333] leading-[153%]">{principle.description}</p>
+                  <p className="text-[16px] text-muted-foreground leading-[153%]">{principle.description}</p>
                 </div>
 
                 <div>
@@ -291,7 +291,7 @@ const Principles = () => {
                     {principle.keyElements.map((element, index) => (
                       <div key={index} className="flex items-start gap-3 p-4 bg-[#e6efe9] rounded-lg">
                         <div className="w-2 h-2 bg-[#3dac5c] rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-[#333]">{element}</span>
+                        <span className="text-muted-foreground">{element}</span>
                       </div>
                     ))}
                   </div>
@@ -305,7 +305,7 @@ const Principles = () => {
                         <div className="w-8 h-8 bg-[#3dac5c] rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
                           {index + 1}
                         </div>
-                        <span className="text-[#333]">{step}</span>
+                        <span className="text-muted-foreground">{step}</span>
                       </div>
                     ))}
                   </div>
@@ -321,13 +321,13 @@ const Principles = () => {
   return (
     <div className="w-full bg-[#fafafa]">
       {/* Hero Section */}
-      <section className="relative h-[300px] sm:h-[350px] lg:h-[400px] w-full overflow-hidden bg-[#2a5942] pt-32 sm:pt-40 md:pt-48 lg:pt-64">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pb-12 sm:pb-16 lg:pb-20">
-          <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%] mb-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64 pb-12 sm:pb-16 lg:pb-20">
+          <h1 className="text-white font-semibold leading-[120%] mb-4">
             Principles for Taxonomy Interoperability
           </h1>
           <p className="text-[14px] sm:text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
@@ -340,16 +340,16 @@ const Principles = () => {
       <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
           <div className="space-y-4 sm:space-y-6">
-            <p className="text-[14px] sm:text-[16px] text-[#333] leading-[153%]">
+            <p className="text-[14px] sm:text-[16px] text-muted-foreground leading-[153%]">
               Sustainable finance taxonomies have emerged from across a range of economic contexts in developed and emerging markets.
               While a local taxonomy is an essential building block for market growth, for taxonomies to enable the flow of cross-border
               capital requires "interoperability"—the ability to compare taxonomies based on common principles and/or a scientific baseline.
             </p>
-            <p className="text-[14px] sm:text-[16px] text-[#333] leading-[153%]">
+            <p className="text-[14px] sm:text-[16px] text-muted-foreground leading-[153%]">
               Interoperability will require global collaboration with input from emerging and developed market contexts. It is a collective
               pursuit of a global objective in line with the COP30 presidency's call for collaboration as well as leadership from the Global South.
             </p>
-            <p className="text-[16px] text-[#333] leading-[153%]">
+            <p className="text-[16px] text-muted-foreground leading-[153%]">
               The 10 principles outlined are for use by sustainable finance taxonomy developers and policymakers in creating, governing
               and implementing taxonomies. They aim to support the effective use of taxonomies by financial and non-financial companies.
             </p>
@@ -406,16 +406,16 @@ const Principles = () => {
       {/* Call to Action */}
       <section className="py-20">
         <div className="max-w-[1170px] mx-auto px-4">
-          <div className="bg-white border border-[#d9d9d9] rounded-lg p-8 text-center">
-            <h2 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-6">
+          <div className="bg-white border border-[#d9d9d9] rounded-lg p-8">
+            <h2 className="font-semibold text-foreground leading-[120%] mb-6">
               Implementation Impact
             </h2>
-            <p className="text-[16px] text-[#333] leading-[153%] mb-8 max-w-3xl mx-auto">
+            <p className="text-[16px] text-muted-foreground leading-[153%] mb-8 max-w-3xl mx-auto">
               By covering both design and implementation of taxonomies, these principles aim to enhance interoperability at different
               phases of maturity. They also aim to reinforce best practices in usability and credibility, the other two pillars of
               taxonomy development and implementation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => navigate('/publications')}
                 className="bg-[#3dac5c] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3dac5c]/90 transition-colors"

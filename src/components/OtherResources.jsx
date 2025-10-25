@@ -73,13 +73,13 @@ const OtherResources = () => {
   return (
     <div className="w-full bg-[#fafafa]">
       {/* Hero Section */}
-      <section className="relative h-[300px] sm:h-[350px] lg:h-[400px] w-full overflow-hidden bg-[#2a5942] pt-32 sm:pt-40 md:pt-48 lg:pt-64">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pb-12 sm:pb-16 lg:pb-20">
-          <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%] mb-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64 pb-12 sm:pb-16 lg:pb-20">
+          <h1 className="text-white font-semibold leading-[120%] mb-4">
             Other Learning Resources
           </h1>
           <p className="text-[14px] sm:text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
@@ -108,7 +108,7 @@ const OtherResources = () => {
                     </p>
                   </div>
 
-                  <p className="text-[#333] text-[14px] sm:text-base leading-[153%] mb-4 sm:mb-6 line-clamp-3">
+                  <p className="text-muted-foreground text-[14px] sm:text-base leading-[153%] mb-4 sm:mb-6 line-clamp-3">
                     {resource.description}
                   </p>
 
@@ -130,15 +130,15 @@ const OtherResources = () => {
 
           {/* Call to Action */}
           <div className="bg-white border border-[#d9d9d9] rounded-lg p-8">
-            <div className="text-center">
-              <h3 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-4">
+            <div>
+              <h3 className="text-[32px] font-semibold text-foreground leading-[120%] mb-4">
                 Explore More Resources
               </h3>
-              <p className="text-[#333] leading-[153%] mb-8 max-w-3xl mx-auto">
+              <p className="text-muted-foreground leading-[153%] mb-8 max-w-3xl mx-auto">
                 Discover our comprehensive publications and principles for taxonomy interoperability,
                 or stay updated with the latest news and developments in sustainable finance.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => navigate('/publications')}
                   className="bg-[#3dac5c] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3dac5c]/90 transition-colors inline-flex items-center gap-2"

@@ -80,8 +80,8 @@ const RoadmapPublications = () => {
         {/* Decorative Circles */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-[289px]">
-          <h1 className="text-white text-[24px] sm:text-[28px] lg:text-[32px] font-semibold leading-[120%]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64">
+          <h1 className="text-white font-semibold leading-[120%]">
             Learning and Resources
           </h1>
         </div>
@@ -116,7 +116,7 @@ const RoadmapPublications = () => {
       {/* Content based on active tab */}
       {activeTab === 'publications' && (
         /* Publications Grid */
-        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
+        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
           <div className="max-w-[1170px] mx-auto">
             {/* Section Heading and Description */}
             <div className="mb-8 sm:mb-10 lg:mb-12">
@@ -171,7 +171,7 @@ const RoadmapPublications = () => {
             </div>
             
             {hasMore && (
-              <div className="mt-12 text-center">
+              <div className="mt-12">
                 <button
                   onClick={handleLoadMore}
                   className="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold font-['Raleway'] hover:bg-green-600 transition-colors"
@@ -186,11 +186,11 @@ const RoadmapPublications = () => {
 
       {activeTab === 'principles' && (
         /* Principles Content */
-        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
+        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
           <div className="max-w-[1170px] mx-auto">
             {/* Main Title and Introduction */}
             <div className="mb-12 sm:mb-14 lg:mb-16">
-              <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-gray-900 font-['Raleway'] mb-6 sm:mb-8">
+              <h2 className="font-semibold text-gray-900 font-['Raleway'] mb-6 sm:mb-8">
                 Principles for Taxonomy Interoperability
               </h2>
               <div className="space-y-4 sm:space-y-6 text-[14px] sm:text-[16px] text-gray-700 font-['Raleway'] leading-relaxed">
@@ -313,7 +313,7 @@ const RoadmapPublications = () => {
 
             {/* Load More Button */}
             {visiblePrinciplesCount < 10 && (
-              <div className="text-center">
+              <div>
                 <button
                   onClick={handleLoadMorePrinciples}
                   className="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold font-['Raleway'] hover:bg-green-600 transition-colors"

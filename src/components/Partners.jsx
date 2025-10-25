@@ -118,6 +118,7 @@ const Partners = () => {
     }
   ]
 
+  /*
   const getTypeIcon = (type) => {
     switch (type) {
       case 'Central Bank':
@@ -137,6 +138,7 @@ const Partners = () => {
         return <Users className="w-6 h-6 text-accent" />
     }
   }
+  */
 
   const PartnerCard = ({ partner }) => (
     <Card className="hover:shadow-lg transition-shadow duration-300 overflow-hidden">
@@ -182,13 +184,13 @@ const Partners = () => {
   return (
     <div className="w-full bg-[#fafafa]">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full overflow-hidden bg-[#2a5942] pt-64">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pb-20">
-          <h1 className="text-[32px] font-semibold text-white leading-[120%] mb-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64 pb-20">
+          <h1 className="text-white font-semibold leading-[120%] mb-4">
             Our Global Partners
           </h1>
           <p className="text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
@@ -202,10 +204,10 @@ const Partners = () => {
       <section className="py-20">
         <div className="max-w-[1170px] mx-auto px-4">
           <div className="mb-12">
-            <h2 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-4">
+            <h2 className="font-semibold text-foreground leading-[120%] mb-4">
               Growing Global Coalition
             </h2>
-            <p className="text-[16px] text-[#333] leading-[153%] max-w-3xl">
+            <p className="text-[16px] text-muted-foreground leading-[153%] max-w-3xl">
               Since the launch at COP29, the initiative has expanded from the founding partners
               to 13 global and public partners, demonstrating strong international commitment
               to sustainable finance taxonomy interoperability.
@@ -216,12 +218,12 @@ const Partners = () => {
             <div className="bg-[#e6efe9] p-8 rounded-lg">
               <div className="text-4xl font-bold text-[#2a5942] mb-2">5</div>
               <div className="text-lg font-semibold text-[#1e1e1e] mb-2">Founding Partners</div>
-              <div className="text-[#333]">Initial coalition launched at COP29</div>
+              <div className="text-muted-foreground">Initial coalition launched at COP29</div>
             </div>
             <div className="bg-[#e6efe9] p-8 rounded-lg">
               <div className="text-4xl font-bold text-[#2a5942] mb-2">13</div>
               <div className="text-lg font-semibold text-[#1e1e1e] mb-2">Total Partners</div>
-              <div className="text-[#333]">Expanded global partnership</div>
+              <div className="text-muted-foreground">Expanded global partnership</div>
             </div>
           </div>
         </div>
@@ -231,10 +233,10 @@ const Partners = () => {
       <section className="py-20 bg-white">
         <div className="max-w-[1170px] mx-auto px-4">
           <div className="mb-10">
-            <h2 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-4">
+            <h2 className="font-semibold text-foreground leading-[120%] mb-4">
               Partner Directory
             </h2>
-            <p className="text-[16px] text-[#333] leading-[153%]">
+            <p className="text-[16px] text-muted-foreground leading-[153%]">
               Complete partner information as specified in the Taxonomy Roadmap document
             </p>
           </div>
@@ -249,7 +251,7 @@ const Partners = () => {
 
           {/* Show More/Less Button */}
           {[...foundingPartners, ...expandedPartners].length > 5 && (
-            <div className="mt-8 text-center">
+            <div className="mt-8">
               <button
                 onClick={() => setShowAll(!showAll)}
                 className="inline-flex items-center gap-2 bg-[#3dac5c] text-white px-6 py-3 rounded-lg hover:bg-[#3dac5c]/90 transition-colors font-semibold"
@@ -275,16 +277,16 @@ const Partners = () => {
       <section className="py-20">
         <div className="max-w-[1170px] mx-auto px-4">
           <div className="mb-10">
-            <h2 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-4">
+            <h2 className="font-semibold text-foreground leading-[120%] mb-4">
               Collaborative Engagement
             </h2>
-            <p className="text-[16px] text-[#333] leading-[153%]">
+            <p className="text-[16px] text-muted-foreground leading-[153%]">
               Our partners actively engage in high-level discussions and roundtables
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center">
+            <Card className="">
               <CardContent className="p-6">
                 <Globe className="w-8 h-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-900 mb-2">G20 Sustainable Finance Working Group</h3>
@@ -292,7 +294,7 @@ const Partners = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="">
               <CardContent className="p-6">
                 <Users className="w-8 h-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-900 mb-2">BRICS Taxonomy Working Group</h3>
@@ -300,7 +302,7 @@ const Partners = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="">
               <CardContent className="p-6">
                 <Building className="w-8 h-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-900 mb-2">IPSF Sherpa Meetings</h3>
@@ -308,7 +310,7 @@ const Partners = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="">
               <CardContent className="p-6">
                 <Leaf className="w-8 h-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-900 mb-2">Hamburg Sustainability Conference</h3>

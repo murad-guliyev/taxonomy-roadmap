@@ -16,11 +16,11 @@ const FocusAreas = () => {
     <div className="min-h-screen bg-[#FAFAFA]">
 
       {/* Hero Section */}
-      <section className="relative h-[387px] bg-[#2a5942] overflow-hidden">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] bg-[#2a5942] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pt-[289px]">
-          <h1 className="text-white text-[32px] font-semibold leading-[120%]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64">
+          <h1 className="text-white font-semibold leading-[120%]">
             Focus Areas and Tools
           </h1>
         </div>
@@ -28,15 +28,15 @@ const FocusAreas = () => {
 
       {/* Tabs Navigation */}
       <section className="bg-[#ECECEC] px-4">
-        <div className="max-w-[1170px] mx-auto flex items-center gap-8 py-5 overflow-x-auto">
+        <div className="max-w-[1170px] mx-auto flex gap-8 py-5 overflow-x-auto">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setSearchParams({ tab: tab.id })}
               className={`whitespace-nowrap text-xl font-semibold leading-[130%] pb-2 border-b-2 transition-colors ${
                 currentTab === tab.id
-                  ? 'text-[#1b3629] border-[#3dac5c]'
-                  : 'text-[#1b3629] border-transparent hover:border-[#3dac5c]/50'
+                  ? 'text-foreground border-[#3dac5c]'
+                  : 'text-foreground border-transparent hover:border-[#3dac5c]/50'
               }`}
             >
               {tab.label}
@@ -51,7 +51,7 @@ const FocusAreas = () => {
           {currentTab === 'common-core' && (
             <div className="flex flex-col gap-[50px]">
               <div className="flex flex-col gap-8">
-                <h2 className="text-[#1b3629] text-xl font-semibold leading-[130%]">
+                <h2 className="text-foreground text-xl font-semibold leading-[130%]">
                   Common Core Activities
                 </h2>
                 <p className="text-black text-base leading-[160%]">
@@ -61,7 +61,7 @@ const FocusAreas = () => {
               </div>
 
               <div className="flex flex-col gap-6">
-                <h3 className="text-[#1b3629] text-lg font-semibold leading-[130%]">
+                <h3 className="text-foreground text-lg font-semibold leading-[130%]">
                   Overview
                 </h3>
                 <p className="text-black text-base leading-[160%]">
@@ -92,59 +92,59 @@ const FocusAreas = () => {
               </div>
 
               <div className="border border-[#d9d9d9] rounded-2xl p-8 bg-white">
-                <h3 className="text-[#1b3629] text-xl font-semibold leading-[130%] mb-8">
+                <h3 className="text-foreground text-xl font-semibold leading-[130%] mb-8">
                   Key Technical Approaches
                 </h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                  <div className="flex flex-col items-center gap-10">
+                  <div className="flex flex-col  gap-10">
                     <div className="w-[100px] h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
                       <Clipboard
                         className="w-12 h-12 text-[#3dac5c]"
                         strokeWidth={2.5}
                       />
                     </div>
-                    <div className="flex flex-col gap-5 text-center">
-                      <h4 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                    <div className="flex flex-col gap-5 ">
+                      <h4 className="text-foreground text-lg font-semibold leading-[130%]">
                         Shared Classification
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         Using International Standard Industrial Classification
                         (ISIC) as a reference framework.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center gap-10">
+                  <div className="flex flex-col  gap-10">
                     <div className="w-[100px] h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
                       <Grid
                         className="w-12 h-12 text-[#3dac5c]"
                         strokeWidth={2.5}
                       />
                     </div>
-                    <div className="flex flex-col gap-5 text-center">
-                      <h4 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                    <div className="flex flex-col gap-5 ">
+                      <h4 className="text-foreground text-lg font-semibold leading-[130%]">
                         Common Criteria
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         Developing shared approaches for defining categories,
                         activities, and metrics.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center gap-10">
+                  <div className="flex flex-col  gap-10">
                     <div className="w-[100px] h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
                       <Sliders
                         className="w-12 h-12 text-[#3dac5c]"
                         strokeWidth={2.5}
                       />
                     </div>
-                    <div className="flex flex-col gap-5 text-center">
-                      <h4 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                    <div className="flex flex-col gap-5 ">
+                      <h4 className="text-foreground text-lg font-semibold leading-[130%]">
                         Tiered Approaches
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         Recommendations for treating activities based on market
                         maturity and national pathways.
                       </p>
@@ -158,7 +158,7 @@ const FocusAreas = () => {
           {currentTab === 'technical' && (
             <div className="flex flex-col gap-[50px]">
               <div className="flex flex-col gap-8">
-                <h2 className="text-[#1b3629] text-xl font-semibold leading-[130%]">
+                <h2 className="text-foreground text-xl font-semibold leading-[130%]">
                   Technical Approaches
                 </h2>
                 <p className="text-black text-base leading-[160%]">
@@ -168,7 +168,7 @@ const FocusAreas = () => {
               </div>
 
               <div className="flex flex-col gap-6">
-                <h3 className="text-[#1b3629] text-lg font-semibold leading-[130%]">
+                <h3 className="text-foreground text-lg font-semibold leading-[130%]">
                   Overview
                 </h3>
                 <p className="text-black text-base leading-[160%]">
@@ -186,7 +186,7 @@ const FocusAreas = () => {
               </div>
 
               <div className="flex flex-col gap-6">
-                <h3 className="text-[#1b3629] text-xl font-semibold leading-[130%]">
+                <h3 className="text-foreground text-xl font-semibold leading-[130%]">
                   Key Components
                 </h3>
 
@@ -200,10 +200,10 @@ const FocusAreas = () => {
                       />
                     </div>
                     <div className="flex-1 flex flex-col gap-6">
-                      <h4 className="text-[#2a5942] text-xl font-semibold leading-[130%]">
+                      <h4 className="text-foreground text-xl font-semibold leading-[130%]">
                         Do No Significant Harm (DNSH)
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         • Environmental safeguard principles
                         <br />
                         • Impact assessment methodologies
@@ -218,10 +218,10 @@ const FocusAreas = () => {
 
                   <div className="flex flex-col md:flex-row gap-[60px]">
                     <div className="flex-1 flex flex-col gap-6 order-2 md:order-1">
-                      <h4 className="text-[#2a5942] text-xl font-semibold leading-[130%]">
+                      <h4 className="text-foreground text-xl font-semibold leading-[130%]">
                         Minimum Social Safeguards (MSS)
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         • Social impact assessment
                         <br />
                         • Stakeholder engagement requirements
@@ -246,7 +246,7 @@ const FocusAreas = () => {
           {currentTab === 'transition' && (
             <div className="flex flex-col gap-[50px]">
               <div className="flex flex-col gap-8">
-                <h2 className="text-[#1b3629] text-xl font-semibold leading-[130%]">
+                <h2 className="text-foreground text-xl font-semibold leading-[130%]">
                   Transition Finance Approaches
                 </h2>
                 <p className="text-black text-base leading-[160%]">
@@ -256,7 +256,7 @@ const FocusAreas = () => {
               </div>
 
               <div className="flex flex-col gap-6">
-                <h3 className="text-[#1b3629] text-lg font-semibold leading-[130%]">
+                <h3 className="text-foreground text-lg font-semibold leading-[130%]">
                   Overview
                 </h3>
                 <p className="text-black text-base leading-[160%]">
@@ -273,59 +273,59 @@ const FocusAreas = () => {
               </div>
 
               <div className="border border-[#d9d9d9] rounded-2xl p-8 bg-white">
-                <h3 className="text-[#1b3629] text-xl font-semibold leading-[130%] mb-8">
+                <h3 className="text-foreground text-xl font-semibold leading-[130%] mb-8">
                   Transition Finance Framework
                 </h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                  <div className="flex flex-col items-center gap-10">
+                  <div className="flex flex-col  gap-10">
                     <div className="w-[100px] h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
                       <Clock
                         className="w-12 h-12 text-[#3dac5c]"
                         strokeWidth={2.5}
                       />
                     </div>
-                    <div className="flex flex-col gap-5 text-center">
-                      <h4 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                    <div className="flex flex-col gap-5 ">
+                      <h4 className="text-foreground text-lg font-semibold leading-[130%]">
                         Pathway Definition
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         Clear criteria for credible transition pathways aligned
                         with climate goals.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center gap-10">
+                  <div className="flex flex-col  gap-10">
                     <div className="w-[100px] h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
                       <Clock
                         className="w-12 h-12 text-[#3dac5c]"
                         strokeWidth={2.5}
                       />
                     </div>
-                    <div className="flex flex-col gap-5 text-center">
-                      <h4 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                    <div className="flex flex-col gap-5 ">
+                      <h4 className="text-foreground text-lg font-semibold leading-[130%]">
                         Timeline Requirements
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         Time-bound commitments and milestones for achieving
                         transition goals.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center gap-10">
+                  <div className="flex flex-col  gap-10">
                     <div className="w-[100px] h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
                       <Sliders
                         className="w-12 h-12 text-[#3dac5c]"
                         strokeWidth={2.5}
                       />
                     </div>
-                    <div className="flex flex-col gap-5 text-center">
-                      <h4 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                    <div className="flex flex-col gap-5 ">
+                      <h4 className="text-foreground text-lg font-semibold leading-[130%]">
                         Monitoring & Reporting
                       </h4>
-                      <p className="text-[#333] text-base leading-[160%]">
+                      <p className="text-muted-foreground text-base leading-[160%]">
                         Regular progress tracking and transparent reporting
                         mechanisms.
                       </p>
@@ -339,30 +339,30 @@ const FocusAreas = () => {
           {currentTab === 'additional' && (
             <div className="flex flex-col gap-[50px]">
               <div className="flex flex-col gap-8">
-                <h2 className="text-[#1b3629] text-xl font-semibold leading-[130%]">
+                <h2 className="text-foreground text-xl font-semibold leading-[130%]">
                   Additional Areas for Greater Alignment
                 </h2>
-                <p className="text-[#333] text-base font-semibold leading-[170%]">
+                <p className="text-muted-foreground text-base font-semibold leading-[170%]">
                   Areas for even greater alignment that may also be explored
                 </p>
               </div>
 
               <div className="flex flex-col md:flex-row gap-11">
                 <div className="flex-1 flex flex-col gap-5 p-5 border border-[#d9d9d9] rounded-2xl bg-[rgba(223,239,230,0.6)]">
-                  <h3 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                  <h3 className="text-foreground text-lg font-semibold leading-[130%]">
                     Inclusivity in Alignment Approaches
                   </h3>
-                  <p className="text-[#333] text-base leading-[160%]">
+                  <p className="text-muted-foreground text-base leading-[160%]">
                     Ensuring small and medium-sized enterprises (SMEs), women
                     and vulnerable groups.
                   </p>
                 </div>
 
                 <div className="flex-1 flex flex-col gap-5 p-5 border border-[#d9d9d9] rounded-2xl bg-[rgba(223,239,230,0.6)]">
-                  <h3 className="text-[#2a5942] text-lg font-semibold leading-[130%]">
+                  <h3 className="text-foreground text-lg font-semibold leading-[130%]">
                     Verification and Assurance Mechanism
                   </h3>
-                  <p className="text-[#333] text-base leading-[160%]">
+                  <p className="text-muted-foreground text-base leading-[160%]">
                     Developing robust verification and assurance mechanisms for
                     taxonomy alignment.
                   </p>

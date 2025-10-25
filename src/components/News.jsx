@@ -6,13 +6,13 @@ const News = () => {
   return (
     <div className="w-full bg-[#fafafa]">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full overflow-hidden bg-[#2a5942] pt-64">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 pb-20">
-          <h1 className="text-[32px] font-semibold text-white leading-[120%] mb-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64 pb-20">
+          <h1 className="text-white font-semibold leading-[120%] mb-4">
             Latest News
           </h1>
           <p className="text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
@@ -58,7 +58,7 @@ const News = () => {
                       {item.title}
                     </h2>
 
-                    <p className="text-[#333] leading-[153%] mb-6 line-clamp-3">
+                    <p className="text-muted-foreground leading-[153%] mb-6 line-clamp-3">
                       {item.description}
                     </p>
 
@@ -83,11 +83,11 @@ const News = () => {
 
           {/* Call to Action */}
           <div className="mt-16">
-            <div className="bg-white border border-[#d9d9d9] rounded-lg p-8 text-center">
-              <h3 className="text-[32px] font-semibold text-[#1b3629] leading-[120%] mb-4">
+            <div className="bg-white border border-[#d9d9d9] rounded-lg p-8">
+              <h3 className="text-[32px] font-semibold text-foreground leading-[120%] mb-4">
                 Stay Connected
               </h3>
-              <p className="text-[#333] leading-[153%] mb-6 max-w-2xl mx-auto">
+              <p className="text-muted-foreground leading-[153%] mb-6 max-w-2xl mx-auto">
                 Follow the latest developments in sustainable finance taxonomy interoperability
                 and learn about upcoming events and initiatives.
               </p>

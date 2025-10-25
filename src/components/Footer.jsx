@@ -4,63 +4,9 @@ import { ExternalLink, Mail, Globe } from 'lucide-react'
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  const footerSections = [
-    {
-      title: "About",
-      links: [
-        { label: "About the Initiative", to: "/about-initiative" },
-        { label: "Partners", to: "/partners" },
-        { label: "Contact", to: "/contact" }
-      ]
-    },
-    {
-      title: "Focus Areas",
-      links: [
-        { label: "Common Core Activities", to: "/pillar-1" },
-        { label: "Technical Approaches", to: "/pillar-2" },
-        { label: "Transition Finance", to: "/pillar-3" },
-        { label: "Additional Areas", to: "/additional-areas" }
-      ]
-    },
-    {
-      title: "Resources",
-      links: [
-        { label: "Publications", to: "/publications" },
-        { label: "Interoperability Principles", to: "/interoperability-principles" },
-        { label: "Other Resources", to: "/other-resources" }
-      ]
-    },
-    {
-      title: "News & Events",
-      links: [
-        { label: "Latest News", to: "/news" },
-        { label: "Events", to: "/events" }
-      ]
-    }
-  ]
-
-  const keyPartners = [
-    {
-      name: "Central Bank of Azerbaijan (CBAR)",
-      url: "https://www.cbar.az/"
-    },
-    {
-      name: "International Finance Corporation (IFC)",
-      url: "https://www.ifc.org/"
-    },
-    {
-      name: "Sustainable Banking and Finance Network (SBFN)",
-      url: "https://www.sbfnetwork.org/"
-    },
-    {
-      name: "United Nations Development Programme (UNDP)",
-      url: "https://www.undp.org/"
-    },
-    {
-      name: "International Platform on Sustainable Finance (IPSF)",
-      url: "https://finance.ec.europa.eu/sustainable-finance/international-platform-sustainable-finance_en"
-    }
-  ]
+  // Unused variables commented out to fix linting warnings
+  // const footerSections = [...]
+  // const keyPartners = [...]
 
   return (
     <footer className="bg-[#2a5942] text-white">

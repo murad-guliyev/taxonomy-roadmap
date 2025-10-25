@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 
 // Card Component
-const CardForLearning = ({ publication, onDownload, className, style, ...props }) => {
+const CardForLearning = ({ publication, onDownload, className, style }) => {
   return (
     <div
       style={{
@@ -152,10 +152,10 @@ const CardForLearning = ({ publication, onDownload, className, style, ...props }
 }
 
 const Publications = () => {
-  const navigate = useNavigate()
-  const [expandedSection, setExpandedSection] = useState(null)
+  // const navigate = useNavigate()
+  // const [expandedSection, setExpandedSection] = useState(null)
   const [showPrinciples, setShowPrinciples] = useState(false)
-  const [selectedPrinciple, setSelectedPrinciple] = useState(null)
+  // const [selectedPrinciple, setSelectedPrinciple] = useState(null)
   const [activeTab, setActiveTab] = useState('publications')
 
   const publications = [
@@ -238,6 +238,7 @@ const Publications = () => {
 
 
 
+  /*
   const getStatusStyle = (status) => {
     switch (status) {
       case 'available':
@@ -250,6 +251,7 @@ const Publications = () => {
         return 'bg-gray-100 text-gray-800'
     }
   }
+  */
 
   const getStatusLabel = (status) => {
     switch (status) {
@@ -273,6 +275,7 @@ const Publications = () => {
     }
   }
 
+  /*
   const handlePreview = (publication) => {
     if (publication.isPrinciples) {
       setShowPrinciples(true)
@@ -282,6 +285,7 @@ const Publications = () => {
       alert('Preview not available for this publication.')
     }
   }
+  */
 
   const principles = [
     {
@@ -406,8 +410,8 @@ const Publications = () => {
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-[289px]">
-          <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-white leading-[120%]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64">
+          <h1 className="text-white font-semibold leading-[120%]">
             Learning and Resources
           </h1>
         </div>
@@ -415,7 +419,7 @@ const Publications = () => {
 
       {/* Tab Bar */}
       <section className="bg-white border-b border-[#d9d9d9]">
-        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
           <div className="flex gap-4 sm:gap-8 lg:gap-12 overflow-x-auto">
             <button
               onClick={() => setActiveTab('publications')}
@@ -443,7 +447,7 @@ const Publications = () => {
 
       {/* Publications Content */}
       <section className="py-12 sm:py-16 lg:py-20">
-        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[215px]">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
           {/* Section Header */}
           <div className="mb-8 sm:mb-10 lg:mb-12">
             <h2 className="font-raleway text-[18px] sm:text-[20px] font-semibold text-[#1b3629] leading-[130%] mb-4">
@@ -466,7 +470,7 @@ const Publications = () => {
           </div>
 
           {/* Load More Button */}
-          <div className="text-center">
+          <div>
             <button className="bg-[#3dac5c] text-white px-8 py-3 rounded-lg font-raleway text-[16px] font-semibold hover:bg-[#3dac5c]/90 transition-colors">
               Load more
             </button>
