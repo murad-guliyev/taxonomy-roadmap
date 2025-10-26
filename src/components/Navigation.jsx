@@ -26,9 +26,9 @@ const Navigation = () => {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50">
       <div className="max-w-[1254px] mx-auto px-3 sm:px-5 py-3 sm:py-6">
-        <div className="bg-white rounded-3xl px-3 sm:px-5 py-4 sm:py-6 flex items-center justify-between lg:justify-center lg:gap-[30px] shadow-md min-h-[80px] sm:min-h-[100px] lg:h-[129px]">
+        <div className="bg-white rounded-3xl px-3 sm:px-5 py-4 sm:py-6 flex items-center justify-between lg:justify-center lg:gap-[50px] shadow-md min-h-[80px] sm:min-h-[100px] lg:h-[129px]">
           {/* Left Menu Items */}
-          <div className="hidden lg:flex items-center gap-[20px] xl:gap-[35px]">
+          <div className="hidden lg:flex items-center gap-[40px] xl:gap-[60px]">
             <Link
               to="/"
               className={`text-[16px] xl:text-[18px] font-semibold text-center transition-colors ${
@@ -77,7 +77,7 @@ const Navigation = () => {
           </div>
 
           {/* Right Menu Items */}
-          <div className="hidden lg:flex items-center gap-[20px] xl:gap-[35px]">
+          <div className="hidden lg:flex items-center gap-[40px] xl:gap-[60px]">
             <Link
               to="/publications"
               className={`text-[14px] xl:text-[18px] font-semibold text-center transition-colors ${
@@ -114,14 +114,16 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#1b3629] p-2"
+              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center text-[#1b3629] hover:bg-gray-100 rounded-xl transition-colors"
             >
-              {isMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
-            </Button>
+              {isMenuOpen ? (
+                <X size={28} className="sm:w-8 sm:h-8 md:w-10 md:h-10 stroke-[1.5]" />
+              ) : (
+                <Menu size={28} className="sm:w-8 sm:h-8 md:w-10 md:h-10 stroke-[1.5]" />
+              )}
+            </button>
           </div>
         </div>
 

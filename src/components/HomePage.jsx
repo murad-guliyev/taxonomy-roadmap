@@ -83,7 +83,7 @@ const HomePage = () => {
         />
 
         {/* Content */}
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-[150px] sm:pt-[200px] lg:pt-[250px]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-2 sm:px-4 pt-[150px] sm:pt-[200px] lg:pt-[250px]">
           <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-semibold !text-white leading-tight mb-6 sm:mb-8 max-w-[670px]">
             Advancing Sustainable Finance from Baku to Belém
           </h1>
@@ -100,23 +100,23 @@ const HomePage = () => {
       </section>
 
       {/* Key Elements Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
         <div className="max-w-[1170px] mx-auto">
           <h2 className="font-semibold text-foreground leading-[120%] mb-8 lg:mb-10">
             Key elements of the Taxonomy Roadmap
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-20">
             {/* Item 1 */}
             <div className="flex flex-col  gap-6 lg:gap-10">
-              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
-                <img src={pieChartIcon} alt="" className="w-10 h-10 sm:w-12 sm:h-12" />
+              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[100px] lg:h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
+                <img src={pieChartIcon} alt="" className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-12 lg:h-12" />
               </div>
               <div className="space-y-4 lg:space-y-5">
-                <h3 className="text-base sm:text-lg font-semibold text-foreground leading-[130%]">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-lg font-semibold text-foreground leading-[130%]">
                   Identifying a common core set of taxonomy economic activities, particularly in EMDEs.
                 </h3>
-                <p className="text-[14px] sm:text-[16px] text-muted-foreground leading-[153%]">
+                <p className="text-[14px] sm:text-[16px] md:text-lg lg:text-[16px] text-muted-foreground leading-[153%]">
                   Focus on essential economic sectors and activities critical for Emerging Markets and Developing Economies to advance decarbonization efforts.
                 </p>
               </div>
@@ -124,14 +124,14 @@ const HomePage = () => {
 
             {/* Item 2 */}
             <div className="flex flex-col  gap-6 lg:gap-10">
-              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
-                <img src={layersIcon} alt="" className="w-10 h-10 sm:w-12 sm:h-12" />
+              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[100px] lg:h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
+                <img src={layersIcon} alt="" className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-12 lg:h-12" />
               </div>
               <div className="space-y-4 lg:space-y-5">
-                <h3 className="text-base sm:text-lg font-semibold text-foreground leading-[130%]">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-lg font-semibold text-foreground leading-[130%]">
                   Creating standardized approaches
                 </h3>
-                <p className="text-[14px] sm:text-[16px] text-muted-foreground leading-[153%]">
+                <p className="text-[14px] sm:text-[16px] md:text-lg lg:text-[16px] text-muted-foreground leading-[153%]">
                   Developing common technical approaches for alignment with taxonomy principles and essential criteria, including Do No Significant Harm (DNSH), Minimum Social Safeguards (MSS) and ESG guidelines. Creating standardized approaches that promote interoperability while incorporating essential sustainability criteria and safeguards.
                 </p>
               </div>
@@ -139,14 +139,14 @@ const HomePage = () => {
 
             {/* Item 3 */}
             <div className="flex flex-col  gap-6 lg:gap-10">
-              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
-                <img src={barChartIcon} alt="" className="w-10 h-10 sm:w-12 sm:h-12" />
+              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[100px] lg:h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
+                <img src={barChartIcon} alt="" className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-12 lg:h-12" />
               </div>
               <div className="space-y-4 lg:space-y-5">
-                <h3 className="text-base sm:text-lg font-semibold text-foreground leading-[130%]">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-lg font-semibold text-foreground leading-[130%]">
                   Formulating common approaches to finance the transition through taxonomies.
                 </h3>
-                <p className="text-[14px] sm:text-[16px] text-muted-foreground leading-[153%]">
+                <p className="text-[14px] sm:text-[16px] md:text-lg lg:text-[16px] text-muted-foreground leading-[153%]">
                   Developing frameworks to support transition finance activities that enable decarbonization across various economic sectors.
                 </p>
               </div>
@@ -156,7 +156,7 @@ const HomePage = () => {
       </section>
 
       {/* Historic Launch Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 bg-[#2a5942] relative overflow-hidden">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4 bg-[#2a5942] relative overflow-hidden">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
@@ -194,13 +194,13 @@ const HomePage = () => {
       </section>
 
       {/* Publications Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
         <div className="max-w-[1170px] mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
             <h2 className="font-semibold text-foreground leading-[120%]">
               Roadmap Publications
             </h2>
-            <Link to="/publications" className="flex  gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
+            <Link to="/publications" className="flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
               <span className="text-foreground text-sm sm:text-base">See all</span>
               <img src={arrowRightIcon} alt="" className="w-4 h-4" />
             </Link>
@@ -215,7 +215,7 @@ const HomePage = () => {
             <div className={`rounded-lg p-4 transition-colors ${expandedAccordion === 0 ? 'bg-white border border-[#d9d9d9]' : 'bg-[#e6efe9]'}`}>
               <button
                 onClick={() => toggleAccordion(0)}
-                className="w-full flex  justify-between"
+                className="w-full flex items-center justify-between"
               >
                 <h3 className={`font-semibold leading-[140%] text-left ${expandedAccordion === 0 ? 'text-foreground' : 'text-foreground'}`}>
                   Roadmap for Advancing Interoperability and Comparability of Sustainable Finance Taxonomies
@@ -237,7 +237,7 @@ const HomePage = () => {
                     <p>Best practice recommendations</p>
                     <p>Global case studies</p>
                   </div>
-                  <button className="mt-4 bg-[#3dac5c] text-white px-6 py-3 rounded-lg hover:bg-[#3dac5c]/90 transition-colors flex  gap-2">
+                  <button className="mt-4 bg-[#3dac5c] text-white px-6 py-3 rounded-lg hover:bg-[#3dac5c]/90 transition-colors flex items-center justify-center gap-2">
                     <img src={downloadIcon} alt="" className="w-4 h-4" />
                     <span>Download PDF</span>
                   </button>
@@ -250,7 +250,7 @@ const HomePage = () => {
               <div key={idx} className={`rounded-lg p-4 transition-colors ${expandedAccordion === idx + 1 ? 'bg-white border border-[#d9d9d9]' : 'bg-[#e6efe9]'}`}>
                 <button
                   onClick={() => toggleAccordion(idx + 1)}
-                  className="w-full flex  justify-between"
+                  className="w-full flex items-center justify-between"
                 >
                   <h3 className={`font-semibold leading-[140%] text-left ${expandedAccordion === idx + 1 ? 'text-foreground' : 'text-foreground'}`}>
                     {title}
@@ -273,13 +273,13 @@ const HomePage = () => {
       </section>
 
       {/* News and Events Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
         <div className="max-w-[1170px] mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
             <h2 className="font-semibold text-foreground leading-[120%]">
               News and events
             </h2>
-            <Link to="/news" className="flex  gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
+            <Link to="/news" className="flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
               <span className="text-foreground text-sm sm:text-base">See all</span>
               <img src={arrowRightIcon} alt="" className="w-4 h-4" />
             </Link>
@@ -344,7 +344,7 @@ const HomePage = () => {
       </section>
 
       {/* COP30 Event Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 bg-[#2a5942] relative overflow-hidden">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4 bg-[#2a5942] relative overflow-hidden">
         {/* Decorative Circles */}
         <div className="absolute -top-24 right-[490px] w-[739px] h-[739px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[342px] left-[690px] w-[739px] h-[739px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm rotate-[120deg]" />
@@ -355,7 +355,7 @@ const HomePage = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row  gap-6 lg:gap-11">
-            <div className="w-full max-w-[424px] h-[250px] sm:h-[300px] lg:h-[367px] bg-white rounded-[20px] flex  flex-shrink-0">
+            <div className="w-full max-w-[424px] h-[250px] sm:h-[300px] lg:h-[367px] bg-white rounded-[20px] flex items-center justify-center flex-shrink-0">
               <img src={cop30Logo} alt="COP30 Logo" className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[303px] lg:h-[303px] object-contain" />
             </div>
 
@@ -372,7 +372,7 @@ const HomePage = () => {
                   Since the launch, the initiative has expanded its partnership from the founding partners to 13 global and public partners. Notably, the Brazil Ministry of Finance, representing the Presidency of COP30, joined the initiative to further advance the implementation of the initiative along the Road of Baku to Belém.
                 </p>
               </div>
-              <button className="flex  gap-2 px-6 py-3 rounded-lg hover:bg-white/10 transition-colors text-white">
+              <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg hover:bg-white/10 transition-colors text-white">
                 <span>Visit website</span>
                 <img src={arrowRightIcon} alt="" className="w-4 h-4" />
               </button>
@@ -382,7 +382,7 @@ const HomePage = () => {
       </section>
 
       {/* Partners Section - Carousel */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
         <div className="max-w-[1170px] mx-auto">
           <h2 className="font-semibold text-foreground leading-[120%] mb-8 lg:mb-10">
             Partners
@@ -423,7 +423,7 @@ const HomePage = () => {
                           {partner.description}
                         </p>
                       </div>
-                      <button className="flex  gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors text-foreground self-start mt-auto">
+                      <button className="flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors text-foreground self-start mt-auto">
                         <span className="text-sm">Visit website</span>
                         <img src={arrowRightIcon} alt="" className="w-4 h-4" />
                       </button>
