@@ -1,11 +1,9 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronDown, ChevronUp, Download, ArrowRight } from 'lucide-react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import './HomePage.css'
 import cop30Logo from '../assets/Cop30Brazil.svg'
-import genevaPhoto from '../assets/1.2_Geneva_Roundtable_Photo.jpg'
 import g20Logo1 from '../assets/5_G20_Logo_1.jpg'
 import g20Logo2 from '../assets/5_G20_Logo_2.jpg'
 import cop29Image from '../assets/Cop29_1.png'
@@ -37,28 +35,32 @@ const HomePage = () => {
       name: 'Central Bank of the Republic of Azerbaijan (CBAR)',
       description: 'The Central Bank of the COP29 host country, leading the initiative to advance sustainable finance taxonomies.',
       logo: cbarLogo,
-      alt: 'CBAR Logo'
+      alt: 'CBAR Logo',
+      website: 'https://www.cbar.az'
     },
     {
       id: 2,
       name: 'International Finance Corporation (IFC)',
       description: 'World Bank Group member focused on private sector development in emerging markets.',
       logo: ifcLogo,
-      alt: 'IFC Logo'
+      alt: 'IFC Logo',
+      website: 'https://www.ifc.org'
     },
     {
       id: 3,
       name: 'Sustainable Banking and Finance Network (SBFN)',
       description: 'IFC-supported network of financial sector regulators and industry associations.',
       logo: sbfnLogo,
-      alt: 'SBFN Logo'
+      alt: 'SBFN Logo',
+      website: 'https://www.sbfnetwork.org'
     },
     {
       id: 4,
       name: 'United Nations Development Programme (UNDP)',
       description: 'UN agency working to eradicate poverty and reduce inequalities through sustainable development.',
       logo: undpLogo,
-      alt: 'UNDP Logo'
+      alt: 'UNDP Logo',
+      website: 'https://www.undp.org'
     }
   ]
 
@@ -70,8 +72,7 @@ const HomePage = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/0710e8cda4c93164646cbb69c02ab0260611e8f6?width=3200"
           alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ top: '-78px', height: '1067px' }}
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
 
         {/* Overlay Gradient */}
@@ -83,7 +84,7 @@ const HomePage = () => {
         />
 
         {/* Content */}
-        <div className="relative z-10 max-w-[1170px] mx-auto px-2 sm:px-4 pt-[150px] sm:pt-[200px] lg:pt-[250px]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-[150px] sm:pt-[200px] lg:pt-[250px]">
           <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-semibold !text-white leading-tight mb-6 sm:mb-8 max-w-[670px]">
             Advancing Sustainable Finance from Baku to Belém
           </h1>
@@ -92,7 +93,7 @@ const HomePage = () => {
           </p>
           <Link
             to="/about-initiative"
-            className="inline-flex items-center gap-2 px-4 py-3 bg-[#3dac5c] text-white font-semibold text-sm sm:text-base rounded-lg hover:bg-[#3dac5c]/90 transition-colors w-[180px] sm:w-[200px] h-[50px] sm:h-[55px]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#3dac5c] text-white font-semibold text-sm sm:text-base rounded-lg hover:bg-[#3dac5c]/90 transition-colors min-w-[180px] h-[50px] sm:h-[55px]"
           >
             Learn more
           </Link>
@@ -100,13 +101,13 @@ const HomePage = () => {
       </section>
 
       {/* Key Elements Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
         <div className="max-w-[1170px] mx-auto">
-          <h2 className="font-semibold text-foreground leading-[120%] mb-8 lg:mb-10">
+          <h2 className="font-semibold text-foreground leading-[120%] mb-6 sm:mb-8 lg:mb-10">
             Key elements of the Taxonomy Roadmap
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 xl:gap-20">
             {/* Item 1 */}
             <div className="flex flex-col  gap-6 lg:gap-10">
               <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[100px] lg:h-[100px] rounded-full border border-[#d9d9d9] flex items-center justify-center">
@@ -156,13 +157,13 @@ const HomePage = () => {
       </section>
 
       {/* Historic Launch Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4 bg-[#2a5942] relative overflow-hidden">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 bg-[#2a5942] relative overflow-hidden">
         {/* Decorative Circles */}
         <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
 
         <div className="relative z-10 max-w-[1170px] mx-auto">
-          <div className="flex flex-col lg:flex-row  gap-6 lg:gap-[26px]">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-[26px]">
             <div className="flex-1 space-y-6 lg:space-y-10">
               <h2 className="font-semibold !text-white leading-[120%]">
                 Historic Launch at COP29 Baku
@@ -177,7 +178,7 @@ const HomePage = () => {
               </div>
               <Link
                 to="/about-initiative"
-                className="inline-flex items-center gap-2 px-4 py-3 bg-[#3dac5c] text-white font-semibold text-sm sm:text-base rounded-lg hover:bg-[#3dac5c]/90 transition-colors w-[180px] sm:w-[200px] h-[50px] sm:h-[55px]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#3dac5c] text-white font-semibold text-sm sm:text-base rounded-lg hover:bg-[#3dac5c]/90 transition-colors min-w-[180px] h-[50px] sm:h-[55px]"
               >
                 Learn more
               </Link>
@@ -194,13 +195,13 @@ const HomePage = () => {
       </section>
 
       {/* Publications Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
         <div className="max-w-[1170px] mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8 lg:mb-10">
             <h2 className="font-semibold text-foreground leading-[120%]">
               Roadmap Publications
             </h2>
-            <Link to="/publications" className="flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
+            <Link to="/publications" className="inline-flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
               <span className="text-foreground text-sm sm:text-base">See all</span>
               <img src={arrowRightIcon} alt="" className="w-4 h-4" />
             </Link>
@@ -217,7 +218,7 @@ const HomePage = () => {
                 onClick={() => toggleAccordion(0)}
                 className="w-full flex items-center justify-between"
               >
-                <h3 className={`font-semibold leading-[140%] text-left ${expandedAccordion === 0 ? 'text-foreground' : 'text-foreground'}`}>
+                <h3 className="font-semibold leading-[140%] text-left text-foreground">
                   Roadmap for Advancing Interoperability and Comparability of Sustainable Finance Taxonomies
                 </h3>
                 <img
@@ -237,10 +238,16 @@ const HomePage = () => {
                     <p>Best practice recommendations</p>
                     <p>Global case studies</p>
                   </div>
-                  <button className="mt-4 bg-[#3dac5c] text-white px-6 py-3 rounded-lg hover:bg-[#3dac5c]/90 transition-colors flex items-center justify-center gap-2">
+                  <a
+                    href="https://uploads.cbar.az/assets/7d847df68cb1050116b027c77.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    className="mt-4 bg-[#3dac5c] text-white px-6 py-3 rounded-lg hover:bg-[#3dac5c]/90 transition-colors inline-flex items-center justify-center gap-2"
+                  >
                     <img src={downloadIcon} alt="" className="w-4 h-4" />
                     <span>Download PDF</span>
-                  </button>
+                  </a>
                 </>
               )}
             </div>
@@ -252,7 +259,7 @@ const HomePage = () => {
                   onClick={() => toggleAccordion(idx + 1)}
                   className="w-full flex items-center justify-between"
                 >
-                  <h3 className={`font-semibold leading-[140%] text-left ${expandedAccordion === idx + 1 ? 'text-foreground' : 'text-foreground'}`}>
+                  <h3 className="font-semibold leading-[140%] text-left text-foreground">
                     {title}
                   </h3>
                   <img
@@ -273,13 +280,13 @@ const HomePage = () => {
       </section>
 
       {/* News and Events Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
         <div className="max-w-[1170px] mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8 lg:mb-10">
             <h2 className="font-semibold text-foreground leading-[120%]">
               News and events
             </h2>
-            <Link to="/news" className="flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
+            <Link to="/news" className="inline-flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors self-start sm:self-auto">
               <span className="text-foreground text-sm sm:text-base">See all</span>
               <img src={arrowRightIcon} alt="" className="w-4 h-4" />
             </Link>
@@ -287,74 +294,74 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {/* News Item 1 */}
-            <div className="flex flex-col gap-4">
-              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg">
-                <img src={g20Logo1} alt="" className="w-full h-full object-cover" />
+            <Link to="/news/sbfn-casi-africa-taxonomy-roundtable" className="flex flex-col gap-4 group cursor-pointer">
+              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg transition-transform duration-300 group-hover:scale-[1.02]">
+                <img src={g20Logo1} alt="SBFN and CASI roundtable discussion" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-[#dfefe6] rounded-2xl px-3 py-1">
                   <span className="text-xs font-bold text-black">Articles</span>
                 </div>
               </div>
               <div className="space-y-4">
-                <h3 className="text-[16px] font-semibold text-foreground leading-[150%]">
+                <h3 className="text-[16px] font-semibold text-foreground leading-[150%] group-hover:text-[#3dac5c] transition-colors">
                   SBFN and CASI co-host a roundtable discussion to advance Sustainable Finance Taxonomy Interoperability in Africa
                 </h3>
                 <p className="text-sm text-muted-foreground tracking-wide leading-5 font-medium">
                   May 2025
                 </p>
               </div>
-            </div>
+            </Link>
 
             {/* News Item 2 */}
-            <div className="flex flex-col gap-4">
-              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg">
-                <img src={genevaPhoto} alt="" className="w-full h-full object-cover" />
+            <Link to="/news/geneva-roundtable-taxonomy-interoperability" className="flex flex-col gap-4 group cursor-pointer">
+              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg transition-transform duration-300 group-hover:scale-[1.02]">
+                <img src={g20Logo2} alt="Geneva roundtable event" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-[#dfefe6] rounded-2xl px-3 py-1">
                   <span className="text-xs font-bold text-black">Event</span>
                 </div>
               </div>
               <div className="space-y-4">
-                <h3 className="text-[16px] font-semibold text-foreground leading-[150%]">
+                <h3 className="text-[16px] font-semibold text-foreground leading-[150%] group-hover:text-[#3dac5c] transition-colors">
                   Global Partners Advance Sustainable Finance Taxonomy Interoperability
                 </h3>
                 <p className="text-sm text-muted-foreground tracking-wide leading-5 font-medium">
                   January 2025
                 </p>
               </div>
-            </div>
+            </Link>
 
             {/* News Item 3 */}
-            <div className="flex flex-col gap-4">
-              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg">
-                <img src={g20Logo2} alt="" className="w-full h-full object-cover" />
+            <Link to="/news/cop29-taxonomy-roadmap-launch" className="flex flex-col gap-4 group cursor-pointer">
+              <div className="relative h-[250px] sm:h-[300px] lg:h-[350px] bg-white overflow-hidden rounded-lg transition-transform duration-300 group-hover:scale-[1.02]">
+                <img src={cop29Image} alt="Roadmap launch at COP29" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-[#dfefe6] rounded-2xl px-3 py-1">
                   <span className="text-xs font-bold text-black">Articles</span>
                 </div>
               </div>
               <div className="space-y-4">
-                <h3 className="text-[16px] font-semibold text-foreground leading-[150%]">
+                <h3 className="text-[16px] font-semibold text-foreground leading-[150%] group-hover:text-[#3dac5c] transition-colors">
                   Roadmap for Advancing Interoperability and Comparability of Sustainable Finance Taxonomies Launched
                 </h3>
                 <p className="text-sm text-muted-foreground tracking-wide leading-5 font-medium">
                   November 2024
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* COP30 Event Section */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4 bg-[#2a5942] relative overflow-hidden">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 bg-[#2a5942] relative overflow-hidden">
         {/* Decorative Circles */}
         <div className="absolute -top-24 right-[490px] w-[739px] h-[739px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
         <div className="absolute top-[342px] left-[690px] w-[739px] h-[739px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm rotate-[120deg]" />
 
         <div className="relative z-10 max-w-[1170px] mx-auto">
-          <h2 className="font-semibold !text-white leading-[120%] mb-8 lg:mb-10">
+          <h2 className="font-semibold !text-white leading-[120%] mb-6 sm:mb-8 lg:mb-10">
             UN Climate Change Conference - COP30 Event
           </h2>
 
-          <div className="flex flex-col lg:flex-row  gap-6 lg:gap-11">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-11">
             <div className="w-full max-w-[424px] h-[250px] sm:h-[300px] lg:h-[367px] bg-white rounded-[20px] flex items-center justify-center flex-shrink-0">
               <img src={cop30Logo} alt="COP30 Logo" className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[303px] lg:h-[303px] object-contain" />
             </div>
@@ -372,19 +379,24 @@ const HomePage = () => {
                   Since the launch, the initiative has expanded its partnership from the founding partners to 13 global and public partners. Notably, the Brazil Ministry of Finance, representing the Presidency of COP30, joined the initiative to further advance the implementation of the initiative along the Road of Baku to Belém.
                 </p>
               </div>
-              <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg hover:bg-white/10 transition-colors text-white">
+              <a
+                href="https://unfccc.int/cop30"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg hover:bg-white/10 transition-colors text-white"
+              >
                 <span>Visit website</span>
                 <img src={arrowRightIcon} alt="" className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Partners Section - Carousel */}
-      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-2 sm:px-4">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
         <div className="max-w-[1170px] mx-auto">
-          <h2 className="font-semibold text-foreground leading-[120%] mb-8 lg:mb-10">
+          <h2 className="font-semibold text-foreground leading-[120%] mb-6 sm:mb-8 lg:mb-10">
             Partners
           </h2>
 
@@ -423,10 +435,15 @@ const HomePage = () => {
                           {partner.description}
                         </p>
                       </div>
-                      <button className="flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors text-foreground self-start mt-auto">
+                      <a
+                        href={partner.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 px-3 py-3 rounded-lg hover:bg-gray-100 transition-colors text-foreground self-start mt-auto"
+                      >
                         <span className="text-sm">Visit website</span>
                         <img src={arrowRightIcon} alt="" className="w-4 h-4" />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </CarouselItem>
@@ -434,9 +451,13 @@ const HomePage = () => {
             </CarouselContent>
 
             {/* Carousel Navigation */}
-            <div className="flex gap-2 mt-8 justify-center">
-              <CarouselPrevious className="relative position-static mx-2 bg-[#3dac5c] text-white hover:bg-[#2a5942] border-none" />
-              <CarouselNext className="relative position-static mx-2 bg-[#3dac5c] text-white hover:bg-[#2a5942] border-none" />
+            <div className="flex gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center">
+              <CarouselPrevious
+                className="!static !w-11 !h-11 sm:!w-12 sm:!h-12 !rounded-full bg-[#3dac5c] text-white hover:bg-[#2a5942] border-none shadow-md hover:shadow-lg transition-all !translate-x-0 !translate-y-0 !left-auto !right-auto !top-auto !bottom-auto disabled:opacity-50 disabled:cursor-not-allowed"
+              />
+              <CarouselNext
+                className="!static !w-11 !h-11 sm:!w-12 sm:!h-12 !rounded-full bg-[#3dac5c] text-white hover:bg-[#2a5942] border-none shadow-md hover:shadow-lg transition-all !translate-x-0 !translate-y-0 !left-auto !right-auto !top-auto !bottom-auto disabled:opacity-50 disabled:cursor-not-allowed"
+              />
             </div>
           </Carousel>
         </div>

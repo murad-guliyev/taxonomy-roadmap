@@ -23,8 +23,8 @@ const News = () => {
       </section>
 
       {/* News Articles */}
-      <section className="py-20">
-        <div className="max-w-[1170px] mx-auto px-4">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
+        <div className="max-w-[1170px] mx-auto">
           <div className="space-y-8">
             {newsItems.map((item) => (
               <article
@@ -42,7 +42,7 @@ const News = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="lg:w-2/3 p-8">
+                  <div className="lg:w-2/3 p-4 sm:p-6 lg:p-8">
                     <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                       <div className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
@@ -82,9 +82,9 @@ const News = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="mt-16">
-            <div className="bg-white border border-[#d9d9d9] rounded-lg p-8">
-              <h3 className="text-[32px] font-semibold text-foreground leading-[120%] mb-4">
+          <div className="mt-12 sm:mt-16">
+            <div className="bg-white border border-[#d9d9d9] rounded-lg p-6 sm:p-8">
+              <h3 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-foreground leading-[120%] mb-4">
                 Stay Connected
               </h3>
               <p className="text-muted-foreground leading-[153%] mb-6 max-w-2xl mx-auto">

@@ -81,7 +81,8 @@ ${formData.message}
         {/* Decorative blur */}
         <div className="absolute bottom-0 right-0 w-[846px] h-[873px] rounded-full bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm opacity-30" />
 
-        <div className="max-w-[822px] mx-auto lg:ml-0 relative z-10">
+        <div className="max-w-[1170px] mx-auto relative z-10">
+          <div className="max-w-[822px]">
           <form
             onSubmit={handleSubmit}
             className="bg-white border border-[#d9d9d9] rounded-lg p-4 sm:p-6 flex flex-col gap-4 sm:gap-6"
@@ -102,7 +103,7 @@ ${formData.message}
                 onChange={handleChange}
                 required
                 placeholder="Enter name here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="min-h-[44px] px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -122,7 +123,7 @@ ${formData.message}
                 onChange={handleChange}
                 required
                 placeholder="Enter surname here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="min-h-[44px] px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -142,7 +143,7 @@ ${formData.message}
                 onChange={handleChange}
                 required
                 placeholder="Enter email here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="min-h-[44px] px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -161,7 +162,7 @@ ${formData.message}
                 value={formData.organization}
                 onChange={handleChange}
                 placeholder="Enter organization here"
-                className="h-10 px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="min-h-[44px] px-4 py-3 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground placeholder:text-[#b3b3b3] text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               />
             </div>
 
@@ -178,7 +179,7 @@ ${formData.message}
                 name="category"
                 value={formData.category}
                 onChange={handleChange}
-                className="min-h-[40px] px-4 py-2 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
+                className="min-h-[44px] px-4 py-2 border border-[#d9d9d9] rounded-lg bg-white text-muted-foreground text-[14px] sm:text-base focus:outline-none focus:ring-2 focus:ring-[#3dac5c]"
               >
                 <option value="">Select feedback category</option>
                 <option value="general">General Inquiry</option>
@@ -225,11 +226,12 @@ ${formData.message}
             <button
               type="submit"
               disabled={isSubmitting}
-              className="h-10 px-2 py-2 bg-[#3dac5c] text-white text-[14px] sm:text-base font-semibold rounded-lg hover:bg-[#3dac5c]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="h-12 px-6 py-3 bg-[#3dac5c] text-white text-[14px] sm:text-base font-semibold rounded-lg hover:bg-[#3dac5c]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Submit'}
             </button>
           </form>
+          </div>
         </div>
       </section>
     </div>

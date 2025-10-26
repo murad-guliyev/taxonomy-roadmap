@@ -201,8 +201,8 @@ const Partners = () => {
       </section>
 
       {/* Partnership Growth Section */}
-      <section className="py-20">
-        <div className="max-w-[1170px] mx-auto px-4">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6">
+        <div className="max-w-[1170px] mx-auto">
           <div className="mb-12">
             <h2 className="font-semibold text-foreground leading-[120%] mb-4">
               Growing Global Coalition
@@ -230,8 +230,8 @@ const Partners = () => {
       </section>
 
       {/* Partner Directory - Cards */}
-      <section className="py-20 bg-white">
-        <div className="max-w-[1170px] mx-auto px-4">
+      <section className="py-[60px] sm:py-[90px] lg:py-[120px] px-4 sm:px-6 bg-white">
+        <div className="max-w-[1170px] mx-auto">
           <div className="mb-10">
             <h2 className="font-semibold text-foreground leading-[120%] mb-4">
               Partner Directory

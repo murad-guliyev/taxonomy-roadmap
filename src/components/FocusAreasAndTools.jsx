@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
+import dnshImage from '../assets/Do No Significant Harm (DNSH).jpg';
+import mssImage from '../assets/Minimum Social Safeguards (MSS).jpg';
+import additionalAreasImage from '../assets/Additional Areas for Greater Alignment.jpg';
 
 const FocusAreasAndTools = () => {
   const [activeFilter, setActiveFilter] = useState('common-core');
@@ -40,7 +43,7 @@ const FocusAreasAndTools = () => {
             'Threshold setting approaches',
             'Monitoring and verification systems'
           ],
-          image: '/src/assets/placeholder-image-1.jpg'
+          image: dnshImage
         },
         {
           title: 'Minimum Social Safeguards (MSS)',
@@ -50,7 +53,7 @@ const FocusAreasAndTools = () => {
             'Labor rights and standards',
             'Community consultation processes'
           ],
-          image: '/src/assets/placeholder-image-2.jpg'
+          image: mssImage
         }
       ]
     },
@@ -80,6 +83,7 @@ const FocusAreasAndTools = () => {
       title: 'Additional Areas for Greater Alignment',
       subtitle: 'Areas for even greater alignment that may also be explored',
       overview: 'This section explores additional areas that can contribute to greater alignment in sustainable finance taxonomies.',
+      image: additionalAreasImage,
       areas: [
         {
           title: 'Inclusivity in Alignment Approaches',
@@ -215,9 +219,13 @@ const FocusAreasAndTools = () => {
               </h3>
               <div className="space-y-8">
                 {currentArea.keyComponents.map((component, index) => (
-                  <div key={index} className="flex items-start gap-8">
-                    <div className="w-48 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                      <span className="text-gray-500">Image Placeholder</span>
+                  <div key={index} className="flex flex-col md:flex-row items-start gap-6 md:gap-8 bg-white p-6 rounded-xl shadow-sm">
+                    <div className="w-full md:w-64 lg:w-80 h-48 md:h-56 rounded-lg overflow-hidden flex-shrink-0">
+                      <img
+                        src={component.image}
+                        alt={component.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="flex-1">
                       <h4 className="text-[20px] font-semibold text-gray-900 leading-[130%] font-['Raleway'] mb-4">
@@ -267,20 +275,27 @@ const FocusAreasAndTools = () => {
           {/* Additional Areas */}
           {activeFilter === 'additional' && currentArea.areas && (
             <div className="mb-12">
-              <div className="space-y-8">
+              {/* Image Section */}
+              {currentArea.image && (
+                <div className="mb-8 rounded-xl overflow-hidden shadow-sm">
+                  <img
+                    src={currentArea.image}
+                    alt="Additional Areas for Greater Alignment"
+                    className="w-full h-64 sm:h-80 lg:h-96 object-cover"
+                  />
+                </div>
+              )}
+
+              {/* Areas Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {currentArea.areas.map((area, index) => (
-                  <div key={index} className="flex items-start gap-8">
-                    <div className="w-48 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                      <span className="text-gray-500">Image Placeholder</span>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-[20px] font-semibold text-gray-900 leading-[130%] font-['Raleway'] mb-4">
-                        {area.title}
-                      </h4>
-                      <p className="text-[16px] text-gray-700 leading-[160%] font-['Raleway']">
-                        {area.description}
-                      </p>
-                    </div>
+                  <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 className="text-[20px] font-semibold text-gray-900 leading-[130%] font-['Raleway'] mb-4">
+                      {area.title}
+                    </h4>
+                    <p className="text-[16px] text-gray-700 leading-[160%] font-['Raleway']">
+                      {area.description}
+                    </p>
                   </div>
                 ))}
               </div>
