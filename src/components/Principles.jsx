@@ -319,20 +319,15 @@ const Principles = () => {
   }
 
   return (
-    <div className="w-full bg-[#fafafa]">
+    <div className="min-h-screen bg-[#FAFAFA]">
       {/* Hero Section */}
-      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
-        {/* Decorative Circles */}
-        <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
-        <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
+      <section className="relative h-[387px] bg-[#2a5942] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64 pb-12 sm:pb-16 lg:pb-20">
-          <h1 className="text-white font-semibold leading-[120%] mb-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-[289px]">
+          <h1 className="text-white font-raleway text-[32px] font-bold leading-[120%]">
             Principles for Taxonomy Interoperability
           </h1>
-          <p className="text-[14px] sm:text-[16px] text-[#f3f3f3] leading-[153%] max-w-[700px]">
-            Ten foundational principles for sustainable finance taxonomy developers and policymakers to enhance global interoperability and comparability
-          </p>
         </div>
       </section>
 

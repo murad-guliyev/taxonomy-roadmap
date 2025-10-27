@@ -74,38 +74,37 @@ const RoadmapPublications = () => {
   const hasMore = visibleCount < allPublications.length;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#FAFAFA]">
       {/* Hero Section */}
-      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
-        {/* Decorative Circles */}
+      <section className="relative h-[387px] bg-[#2a5942] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm" />
 
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64">
-          <h1 className="text-white font-semibold leading-[120%]">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-[289px]">
+          <h1 className="text-white font-raleway text-[32px] font-bold leading-[120%]">
             Learning and Resources
           </h1>
         </div>
       </section>
 
-      {/* Navigation Tabs */}
-      <section className="bg-[#ECECEC] px-4 sm:px-6">
-        <div className="max-w-[1170px] mx-auto flex items-center gap-4 sm:gap-6 lg:gap-8 py-4 sm:py-5 overflow-x-auto">
+      {/* Tabs Navigation */}
+      <section className="bg-white w-full border-b border-gray-200">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 flex items-center gap-8 py-5 overflow-x-auto">
           <button
             onClick={() => setActiveTab('publications')}
-            className={`whitespace-nowrap text-lg sm:text-xl font-semibold leading-[130%] pb-2 border-b-2 transition-colors ${
+            className={`whitespace-nowrap font-raleway text-xl font-bold leading-[130%] pb-2 border-b-2 transition-colors ${
               activeTab === 'publications'
-                ? 'text-[#1b3629] border-[#3dac5c]'
-                : 'text-[#1b3629] border-transparent hover:border-[#3dac5c]/50'
+                ? 'text-[#2a5942] border-[#3dac5c]'
+                : 'text-[#2a5942] border-transparent hover:border-[#3dac5c]/50'
             }`}
           >
             Roadmap Publications
           </button>
           <button
             onClick={() => setActiveTab('principles')}
-            className={`whitespace-nowrap text-lg sm:text-xl font-semibold leading-[130%] pb-2 border-b-2 transition-colors ${
+            className={`whitespace-nowrap font-raleway text-xl font-bold leading-[130%] pb-2 border-b-2 transition-colors ${
               activeTab === 'principles'
-                ? 'text-[#1b3629] border-[#3dac5c]'
-                : 'text-[#1b3629] border-transparent hover:border-[#3dac5c]/50'
+                ? 'text-[#2a5942] border-[#3dac5c]'
+                : 'text-[#2a5942] border-transparent hover:border-[#3dac5c]/50'
             }`}
           >
             Principles for Taxonomy Interoperability
@@ -116,7 +115,7 @@ const RoadmapPublications = () => {
       {/* Content based on active tab */}
       {activeTab === 'publications' && (
         /* Publications Grid */
-        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#FAFAFA]">
           <div className="max-w-[1170px] mx-auto">
             {/* Section Heading and Description */}
             <div className="mb-8 sm:mb-10 lg:mb-12">
@@ -186,7 +185,7 @@ const RoadmapPublications = () => {
 
       {activeTab === 'principles' && (
         /* Principles Content */
-        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+        <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#FAFAFA]">
           <div className="max-w-[1170px] mx-auto">
             {/* Main Title and Introduction */}
             <div className="mb-12 sm:mb-14 lg:mb-16">

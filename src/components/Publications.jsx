@@ -152,11 +152,9 @@ const CardForLearning = ({ publication, onDownload, className, style }) => {
 }
 
 const Publications = () => {
-  // const navigate = useNavigate()
-  // const [expandedSection, setExpandedSection] = useState(null)
-  const [showPrinciples, setShowPrinciples] = useState(false)
-  // const [selectedPrinciple, setSelectedPrinciple] = useState(null)
   const [activeTab, setActiveTab] = useState('publications')
+  
+  console.log('Active Tab:', activeTab)
 
   const publications = [
     {
@@ -352,32 +350,94 @@ const Publications = () => {
 
   return (
     <div className="w-full bg-[#fafafa]">
-      {/* Principles Modal */}
-      {showPrinciples && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setShowPrinciples(false)}>
-          <div className="bg-white rounded-xl max-w-6xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-            <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
-              <h2 className="text-2xl font-bold text-[#1b3629]">Principles for Taxonomy Interoperability</h2>
-              <button
-                onClick={() => setShowPrinciples(false)}
-                className="text-gray-500 hover:text-gray-700 p-2"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
 
-            <div className="p-6">
-              <p className="text-[#333] leading-[160%] mb-8">
-                Ten foundational principles for sustainable finance taxonomy developers and policymakers to enhance global interoperability and comparability.
-              </p>
+      {/* Hero Section */}
+      <section className="relative h-[387px] bg-[#2a5942] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#3dac5c]/5 to-transparent backdrop-blur-sm" />
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-[289px]">
+          <h1 className="text-white font-raleway text-[32px] font-bold leading-[120%]">
+            Learning and Resources
+          </h1>
+        </div>
+      </section>
+
+      {/* Tabs Navigation */}
+      <section className="bg-white w-full border-b border-gray-200">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 flex items-center gap-8 py-5 overflow-x-auto">
+          <button
+            onClick={() => setActiveTab('publications')}
+            className={`whitespace-nowrap font-raleway text-xl font-bold leading-[130%] pb-2 border-b-2 transition-colors ${
+              activeTab === 'publications'
+                ? 'text-[#2a5942] border-[#3dac5c]'
+                : 'text-[#2a5942] border-transparent hover:border-[#3dac5c]/50'
+            }`}
+          >
+            Roadmap Publications
+          </button>
+          <button
+            onClick={() => setActiveTab('principles')}
+            className={`whitespace-nowrap font-raleway text-xl font-bold leading-[130%] pb-2 border-b-2 transition-colors ${
+              activeTab === 'principles'
+                ? 'text-[#2a5942] border-[#3dac5c]'
+                : 'text-[#2a5942] border-transparent hover:border-[#3dac5c]/50'
+            }`}
+          >
+            Principles for Taxonomy Interoperability
+          </button>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <div className="bg-[#fafafa] min-h-screen">
+        <div className="max-w-[1170px] mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
+          {activeTab === 'publications' ? (
+            <>
+              {/* Section Header */}
+              <div className="mb-8 sm:mb-10 lg:mb-12">
+                <h2 className="font-raleway text-[18px] sm:text-[20px] font-semibold text-[#1b3629] leading-[130%] mb-4">
+                  Roadmap Publications
+                </h2>
+                <p className="font-raleway text-[14px] sm:text-[16px] font-normal text-text-default leading-[160%]">
+                  Access comprehensive documentation, reports, and guidelines for sustainable finance taxonomy implementation
+                </p>
+              </div>
+
+              {/* Publications Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[45px] mb-8 sm:mb-10 lg:mb-12">
+                {publications.map((publication) => (
+                  <CardForLearning 
+                    key={publication.id} 
+                    publication={publication} 
+                    onDownload={handleDownload}
+                  />
+                ))}
+              </div>
+
+              {/* Load More Button */}
+              <div>
+                <button className="bg-[#3dac5c] text-white px-8 py-3 rounded-lg font-raleway text-[16px] font-semibold hover:bg-[#3dac5c]/90 transition-colors">
+                  Load more
+                </button>
+              </div>
+            </>
+          ) : (
+            <>
+              {/* Principles Section */}
+              <div className="mb-8 sm:mb-10 lg:mb-12">
+                <h2 className="font-raleway text-[18px] sm:text-[20px] font-semibold text-[#1b3629] leading-[130%] mb-4">
+                  Principles for Taxonomy Interoperability
+                </h2>
+                <p className="font-raleway text-[14px] sm:text-[16px] font-normal text-text-default leading-[160%]">
+                  Ten foundational principles for sustainable finance taxonomy developers and policymakers
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {principles.map((principle) => (
                   <div
                     key={principle.id}
-                    className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden cursor-pointer border border-gray-100 p-4"
+                    className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden cursor-pointer border border-gray-100 p-6"
                   >
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs font-semibold text-[#3dac5c] uppercase tracking-wide">
@@ -393,90 +453,10 @@ const Publications = () => {
                   </div>
                 ))}
               </div>
-
-              <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-                <p className="text-sm text-[#333] leading-[153%]">
-                  <strong>Note:</strong> These principles aim to enhance interoperability at different phases of maturity and reinforce best practices in usability and credibility for taxonomy development and implementation.
-                </p>
-              </div>
-            </div>
-          </div>
+            </>
+          )}
         </div>
-      )}
-
-      {/* Hero Section */}
-      <section className="relative h-[300px] sm:h-[350px] lg:h-[387px] w-full overflow-hidden bg-[#2a5942]">
-        {/* Decorative Circles */}
-        <div className="absolute top-[150px] right-[-200px] w-[777px] h-[803px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
-        <div className="absolute top-[40px] right-[-100px] w-[724px] h-[747px] rounded-full opacity-10 bg-gradient-to-br from-white/5 to-transparent blur-sm" />
-
-        <div className="relative z-10 max-w-[1170px] mx-auto px-4 sm:px-6 pt-32 sm:pt-40 md:pt-48 lg:pt-64">
-          <h1 className="text-white font-semibold leading-[120%]">
-            Learning and Resources
-          </h1>
-        </div>
-      </section>
-
-      {/* Tab Bar */}
-      <section className="bg-white border-b border-[#d9d9d9]">
-        <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
-          <div className="flex gap-4 sm:gap-8 lg:gap-12 overflow-x-auto">
-            <button
-              onClick={() => setActiveTab('publications')}
-              className={`py-4 font-semibold text-sm sm:text-base relative transition-colors whitespace-nowrap ${
-                activeTab === 'publications'
-                  ? 'text-[#1b3629] border-b-2 border-[#3dac5c] -mb-[2px]'
-                  : 'text-[#999] hover:text-[#1b3629]'
-              }`}
-            >
-              Roadmap Publications
-            </button>
-            <button
-              onClick={() => setActiveTab('principles')}
-              className={`py-4 font-semibold text-sm sm:text-base relative transition-colors whitespace-nowrap ${
-                activeTab === 'principles'
-                  ? 'text-[#1b3629] border-b-2 border-[#3dac5c] -mb-[2px]'
-                  : 'text-[#999] hover:text-[#1b3629]'
-              }`}
-            >
-              Principles for Taxonomy Interoperability
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Content */}
-      <section className="py-12 sm:py-16 lg:py-20">
-        <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
-          {/* Section Header */}
-          <div className="mb-8 sm:mb-10 lg:mb-12">
-            <h2 className="font-raleway text-[18px] sm:text-[20px] font-semibold text-[#1b3629] leading-[130%] mb-4">
-              Roadmap Publications
-            </h2>
-            <p className="font-raleway text-[14px] sm:text-[16px] font-normal text-text-default leading-[160%]">
-              Access comprehensive documentation, reports, and guidelines for sustainable finance taxonomy implementation
-            </p>
-          </div>
-
-          {/* Publications Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[45px] mb-8 sm:mb-10 lg:mb-12">
-            {publications.map((publication) => (
-              <CardForLearning 
-                key={publication.id} 
-                publication={publication} 
-                onDownload={handleDownload}
-              />
-            ))}
-          </div>
-
-          {/* Load More Button */}
-          <div>
-            <button className="bg-[#3dac5c] text-white px-8 py-3 rounded-lg font-raleway text-[16px] font-semibold hover:bg-[#3dac5c]/90 transition-colors">
-              Load more
-            </button>
-          </div>
-        </div>
-      </section>
+      </div>
 
     </div>
   )

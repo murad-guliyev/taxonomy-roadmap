@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm start)",
+      "Bash(npm run:*)",
+      "Bash(dir \"C:\\Users\\Gumru_Suleymanova\\Desktop\\TAKSONAMIYAN ROAD MAP\\taxonomy-roadmap-1\\src\\assets\\New designs\\News and Events\")",
+      "Bash(dir \"C:\\Users\\Gumru_Suleymanova\\Desktop\\TAKSONAMIYAN ROAD MAP\\taxonomy-roadmap-1\\src\\assets\\New designs\")",
+      "Bash(dir \"C:\\Users\\Gumru_Suleymanova\\Desktop\\TAKSONAMIYAN ROAD MAP\\taxonomy-roadmap-1\\src\\assets\\New designs\\pages\")",
+      "Bash(dir /s \"C:\\Users\\Gumru_Suleymanova\\Desktop\\TAKSONAMIYAN ROAD MAP\\taxonomy-roadmap-1\\src\\assets\\New designs\")",
+      "Bash(curl:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
